@@ -1,0 +1,1001 @@
+employee_id,name,phone_number,job_role,location,salary,reports_to
+54870,Employee_0,948-479-4765,CEO,Remote,345842.05,
+36886,Employee_1,375-360-8153,CFO,San Francisco,351492.3,54870
+63225,Employee_2,372-479-3206,COO,New York,357620.3,54870
+80084,Employee_3,284-345-6515,Vice President,Remote,196383.61,36886
+91497,Employee_4,544-226-5347,Vice President,Austin,229971.44,36886
+47131,Employee_5,322-675-1758,Vice President,Remote,191927.76,63225
+30882,Employee_6,568-771-3532,Vice President,Austin,234255.44,36886
+56639,Employee_7,226-486-3393,Vice President,Remote,224344.41,36886
+51697,Employee_8,696-910-9140,Vice President,Austin,205265.24,63225
+44813,Employee_9,618-292-4587,Vice President,San Francisco,251617.57,63225
+89582,Employee_10,999-671-5641,Director,San Francisco,192832.06,63225
+92271,Employee_11,310-515-7985,Director,New York,187527.59,56639
+79678,Employee_12,231-727-2432,Director,Chicago,179344.14,47131
+64227,Employee_13,731-563-4030,Director,Austin,172924.98,51697
+72924,Employee_14,373-468-2556,Director,San Francisco,192482.23,91497
+69484,Employee_15,810-459-4896,Director,Remote,171592.39,44813
+31629,Employee_16,752-679-6830,Director,Remote,156574.74,91497
+86642,Employee_17,296-582-6970,Director,Remote,150078.91,91497
+91874,Employee_18,211-800-7659,Director,New York,181200.58,80084
+33284,Employee_19,820-493-5204,Director,Chicago,166117.38,91497
+39489,Employee_20,426-517-8077,Director,New York,184090.61,47131
+71772,Employee_21,912-420-1523,Director,Austin,172734.64,91497
+53283,Employee_22,283-447-1298,Director,New York,193555.58,56639
+55521,Employee_23,922-811-2607,Director,New York,184974.85,51697
+79805,Employee_24,494-303-1246,Director,Remote,165573.8,36886
+28277,Employee_25,597-724-9111,Director,Chicago,176620.42,44813
+38667,Employee_26,496-506-5819,Director,San Francisco,187815.21,91497
+95413,Employee_27,353-994-5360,Director,Austin,159553.61,63225
+93535,Employee_28,998-791-8848,Director,San Francisco,192265.17,56639
+29281,Employee_29,813-566-1231,Director,Austin,174544.98,47131
+97736,Employee_30,885-715-8498,Director,Remote,162931.45,91497
+26282,Employee_31,947-461-2112,Director,Austin,173570.72,91497
+79498,Employee_32,207-561-4161,Director,Remote,155527.95,47131
+22758,Employee_33,769-970-7873,Director,New York,167396.44,44813
+49186,Employee_34,519-648-1389,Director,Remote,160152.21,36886
+17223,Employee_35,624-952-8053,Director,San Francisco,184591.88,30882
+59187,Employee_36,331-887-4822,Director,Chicago,159352.77,91497
+17963,Employee_37,206-652-3970,Director,New York,190986.12,30882
+54509,Employee_38,947-279-5704,Director,Remote,132426.81,56639
+20494,Employee_39,786-263-5133,Director,Remote,170281.29,80084
+48724,Employee_40,810-267-2587,Manager,New York,165843.51,53283
+77063,Employee_41,238-971-6943,Manager,Chicago,139981.86,86642
+57974,Employee_42,665-983-2565,Manager,San Francisco,146537.18,89582
+45772,Employee_43,266-673-7428,Manager,San Francisco,165960.05,79805
+36793,Employee_44,830-401-2596,Manager,Austin,121430.5,26282
+28045,Employee_45,829-210-9862,Manager,Chicago,140913.13,26282
+36574,Employee_46,794-868-4091,Manager,Chicago,121130.79,91874
+28875,Employee_47,205-754-3696,Manager,Chicago,131914.92,86642
+10275,Employee_48,994-808-2597,Manager,Chicago,132952.31,95413
+34509,Employee_49,945-866-2119,Manager,San Francisco,156854.79,97736
+75841,Employee_50,836-377-6137,Manager,Remote,110258.46,31629
+89210,Employee_51,853-332-9040,Manager,New York,148166.28,91874
+59603,Employee_52,347-565-6575,Manager,Chicago,144786.29,38667
+13428,Employee_53,848-558-2395,Manager,Remote,117749.19,95413
+65849,Employee_54,895-434-3257,Manager,Chicago,147661.3,22758
+41244,Employee_55,373-428-3297,Manager,Remote,132925.05,97736
+77593,Employee_56,951-841-7959,Manager,San Francisco,152367.67,69484
+80586,Employee_57,345-945-6160,Manager,Austin,106957.65,54509
+94559,Employee_58,971-310-9601,Manager,Remote,138445.11,53283
+17718,Employee_59,940-226-2538,Manager,San Francisco,145378.13,79498
+90066,Employee_60,483-757-5821,Manager,Remote,134182.64,49186
+29026,Employee_61,876-915-7310,Manager,San Francisco,142544.72,31629
+12885,Employee_62,840-332-2001,Manager,Austin,108973.29,55521
+59497,Employee_63,513-323-3586,Manager,Austin,141547.9,54509
+11916,Employee_64,547-562-4034,Manager,San Francisco,145253.81,59187
+64914,Employee_65,545-871-7862,Manager,San Francisco,147839.95,26282
+24710,Employee_66,854-857-4322,Manager,New York,171099.5,72924
+35285,Employee_67,298-636-9471,Manager,San Francisco,169115.73,79805
+15110,Employee_68,833-350-4893,Manager,Austin,148339.77,31629
+82826,Employee_69,946-224-8095,Manager,New York,140133.05,31629
+88802,Employee_70,876-344-7816,Manager,Remote,106191.89,20494
+81784,Employee_71,339-647-7691,Manager,New York,158127.42,55521
+85745,Employee_72,931-782-6507,Manager,New York,140491.4,22758
+20966,Employee_73,673-915-5310,Manager,Remote,112622.16,64227
+20018,Employee_74,495-295-8285,Manager,Austin,125579.89,89582
+61962,Employee_75,395-761-3050,Manager,Remote,110406.88,22758
+79630,Employee_76,951-483-6517,Manager,Chicago,137463.55,39489
+72448,Employee_77,432-753-8646,Manager,Remote,123325.1,26282
+77675,Employee_78,790-316-9968,Manager,Austin,138782.99,86642
+43068,Employee_79,746-707-2488,Manager,Austin,130550.71,31629
+31692,Employee_80,818-588-9175,Manager,Chicago,142859.48,26282
+38251,Employee_81,551-976-1428,Manager,Chicago,131972.0,79498
+10073,Employee_82,242-282-8472,Manager,Austin,147753.84,59187
+47890,Employee_83,649-469-8930,Manager,New York,156021.02,79498
+79953,Employee_84,868-688-9715,Manager,Remote,108292.31,38667
+79928,Employee_85,287-264-5344,Manager,Chicago,138384.91,71772
+37436,Employee_86,764-646-4080,Manager,New York,137757.76,54509
+63265,Employee_87,861-633-8945,Manager,San Francisco,154908.44,92271
+28025,Employee_88,951-340-2495,Manager,Austin,149482.5,38667
+68693,Employee_89,438-975-2100,Manager,Austin,128730.58,28277
+87977,Employee_90,601-640-2719,Manager,Austin,135092.4,55521
+69722,Employee_91,926-876-2106,Manager,Remote,144580.25,29281
+66595,Employee_92,687-401-5799,Manager,Austin,133458.63,79678
+67644,Employee_93,570-609-6820,Manager,San Francisco,156244.74,71772
+50524,Employee_94,945-885-9318,Manager,New York,158275.44,59187
+78036,Employee_95,714-994-2470,Manager,Austin,128007.26,49186
+80878,Employee_96,599-230-1135,Manager,Chicago,138820.9,29281
+81183,Employee_97,811-293-6675,Manager,Austin,126377.99,69484
+15283,Employee_98,819-452-4903,Manager,San Francisco,175703.88,33284
+77455,Employee_99,563-850-9989,Manager,New York,155489.39,53283
+49877,Employee_100,561-701-4828,Manager,Chicago,128370.04,22758
+72107,Employee_101,358-571-6024,Manager,Remote,111557.66,17963
+74158,Employee_102,894-391-7536,Manager,Remote,104953.06,92271
+63237,Employee_103,720-662-8425,Manager,San Francisco,173396.3,69484
+45801,Employee_104,739-963-9323,Manager,New York,168417.28,64227
+21799,Employee_105,768-554-1100,Manager,Chicago,121497.99,69484
+83256,Employee_106,325-613-2331,Manager,San Francisco,176944.75,79678
+50884,Employee_107,430-389-5466,Manager,San Francisco,155667.51,38667
+23566,Employee_108,910-670-7659,Manager,Remote,127436.2,26282
+49141,Employee_109,435-622-3717,Manager,Remote,137337.9,39489
+28233,Employee_110,332-847-1024,Manager,Remote,125800.64,79498
+33524,Employee_111,310-624-7485,Manager,Austin,126148.21,49186
+88182,Employee_112,937-397-7903,Manager,New York,153886.51,89582
+85716,Employee_113,797-694-9124,Manager,Austin,109112.19,69484
+11120,Employee_114,676-503-2085,Manager,Remote,119273.55,28277
+32271,Employee_115,921-667-6109,Manager,San Francisco,146502.39,38667
+47802,Employee_116,306-873-3866,Manager,Remote,131200.84,79805
+82194,Employee_117,625-319-7004,Manager,San Francisco,161588.06,17223
+39909,Employee_118,311-365-6036,Manager,Austin,128190.01,39489
+69100,Employee_119,606-999-1894,Manager,Chicago,135931.83,89582
+82996,Employee_120,454-925-8089,Manager,Chicago,129544.1,17963
+37035,Employee_121,796-491-4799,Manager,San Francisco,139028.85,38667
+54404,Employee_122,874-986-7890,Manager,New York,144098.15,31629
+80756,Employee_123,682-246-9098,Manager,New York,134482.51,69484
+19091,Employee_124,538-430-6244,Manager,Chicago,132993.57,86642
+20320,Employee_125,229-891-4408,Manager,San Francisco,174468.14,71772
+33225,Employee_126,747-611-9524,Manager,Austin,134610.41,59187
+76674,Employee_127,770-668-6799,Manager,Chicago,127726.81,17223
+75042,Employee_128,417-957-7000,Manager,New York,139783.69,71772
+19973,Employee_129,607-906-3972,Manager,Chicago,147145.98,71772
+27173,Employee_130,756-636-6079,Manager,San Francisco,129892.33,54509
+86031,Employee_131,982-954-2867,Manager,New York,163936.55,17223
+13071,Employee_132,400-842-6993,Manager,Austin,147819.29,28277
+17665,Employee_133,628-452-1836,Manager,Chicago,137637.86,33284
+78501,Employee_134,495-637-6901,Manager,Chicago,142402.28,79498
+88091,Employee_135,993-995-2176,Manager,Chicago,147837.31,93535
+84272,Employee_136,474-957-9510,Manager,San Francisco,163934.22,89582
+53326,Employee_137,806-874-2775,Manager,Chicago,126714.61,20494
+25557,Employee_138,291-628-1738,Manager,Chicago,148326.36,55521
+16012,Employee_139,230-498-7244,Manager,Austin,133491.82,17223
+92248,Employee_140,381-698-2951,Software Engineer,Remote,108637.15,13428
+66636,Employee_141,329-912-2186,Software Engineer,Remote,106120.98,53326
+56240,Employee_142,263-878-2658,Software Engineer,New York,152439.91,28045
+69522,Employee_143,595-504-9304,Software Engineer,Remote,92577.46,67644
+70928,Employee_144,814-728-9643,Software Engineer,Austin,110002.5,69100
+29619,Employee_145,720-501-2053,Software Engineer,Chicago,107132.82,63237
+54377,Employee_146,251-311-9250,Software Engineer,Remote,109043.18,20966
+55106,Employee_147,799-941-7135,Software Engineer,New York,125140.88,49141
+90864,Employee_148,511-970-9113,Software Engineer,San Francisco,131911.0,33524
+95133,Employee_149,291-293-1005,Software Engineer,New York,117692.09,20018
+53301,Employee_150,683-699-1976,Software Engineer,Austin,117751.89,72107
+28991,Employee_151,325-336-1526,Software Engineer,Remote,103827.33,50524
+39046,Employee_152,485-658-4053,Software Engineer,San Francisco,115718.27,20320
+64532,Employee_153,701-204-5125,Software Engineer,Chicago,114013.37,61962
+14967,Employee_154,747-689-3720,Software Engineer,San Francisco,122853.76,50884
+36126,Employee_155,691-547-1668,Software Engineer,Austin,107385.82,17718
+94523,Employee_156,927-258-6212,Software Engineer,Chicago,113401.43,80878
+65650,Employee_157,454-323-8986,Software Engineer,New York,129084.91,69100
+31419,Employee_158,330-224-3890,Software Engineer,Austin,119405.74,63237
+34375,Employee_159,364-288-5392,Software Engineer,Austin,99109.83,28025
+68759,Employee_160,205-883-7800,Software Engineer,Remote,119506.41,54404
+29865,Employee_161,994-292-8793,Software Engineer,San Francisco,123481.85,69722
+68730,Employee_162,958-473-9757,Software Engineer,San Francisco,149090.76,17718
+73613,Employee_163,695-408-9484,Software Engineer,San Francisco,137752.91,23566
+76588,Employee_164,805-491-9770,Software Engineer,Remote,112830.99,87977
+29727,Employee_165,816-801-3467,Software Engineer,New York,116324.45,79630
+38442,Employee_166,359-917-4789,Software Engineer,San Francisco,136010.25,23566
+58297,Employee_167,503-701-3531,Software Engineer,Chicago,138020.36,33524
+75152,Employee_168,520-291-1975,Software Engineer,Austin,110567.23,69100
+75105,Employee_169,384-936-3836,Software Engineer,Remote,113091.94,39909
+97467,Employee_170,433-515-1934,Software Engineer,Chicago,97772.62,59603
+72667,Employee_171,526-484-8001,Software Engineer,Remote,94668.14,19973
+42586,Employee_172,836-879-4226,Software Engineer,New York,113347.51,79630
+20733,Employee_173,350-285-1095,Software Engineer,Chicago,113466.27,83256
+60972,Employee_174,477-975-6822,Software Engineer,Austin,85381.01,36574
+69490,Employee_175,854-899-9536,Software Engineer,Chicago,142876.18,48724
+49108,Employee_176,698-591-1307,Software Engineer,New York,125213.49,81183
+93463,Employee_177,272-567-5355,Software Engineer,New York,120362.73,82996
+87853,Employee_178,910-496-6124,Software Engineer,San Francisco,134473.61,35285
+76928,Employee_179,807-202-9772,Software Engineer,San Francisco,138889.53,49141
+55789,Employee_180,888-680-9035,Software Engineer,Chicago,120228.12,77675
+29480,Employee_181,407-711-4019,Software Engineer,San Francisco,127322.21,45772
+71591,Employee_182,715-656-3029,Software Engineer,New York,146336.83,11120
+32268,Employee_183,827-685-6577,Software Engineer,Chicago,117965.39,25557
+26845,Employee_184,608-782-4859,Software Engineer,San Francisco,127806.23,57974
+43491,Employee_185,446-966-6882,Software Engineer,San Francisco,140296.02,54404
+76653,Employee_186,843-697-6184,Software Engineer,Remote,95607.71,80586
+96840,Employee_187,323-495-7511,Software Engineer,New York,139060.14,11120
+19744,Employee_188,863-221-7571,Software Engineer,San Francisco,126349.84,88802
+67506,Employee_189,942-834-8640,Software Engineer,San Francisco,127391.15,82194
+72238,Employee_190,817-308-3452,Software Engineer,Remote,97519.7,89210
+93723,Employee_191,721-519-9415,Software Engineer,New York,107886.71,33524
+21483,Employee_192,885-977-4885,Software Engineer,Remote,90131.06,47802
+46426,Employee_193,299-435-7097,Software Engineer,New York,115117.09,13071
+91123,Employee_194,340-957-7412,Software Engineer,San Francisco,127019.66,67644
+63741,Employee_195,872-358-1197,Software Engineer,Austin,114135.56,54404
+39384,Employee_196,347-483-9924,Software Engineer,Remote,107998.48,64914
+96165,Employee_197,843-606-8700,Software Engineer,New York,137655.31,28045
+42416,Employee_198,367-849-9358,Software Engineer,New York,126946.37,72448
+52902,Employee_199,361-736-6415,Software Engineer,New York,115972.28,79630
+99856,Employee_200,678-929-8362,Software Engineer,New York,115804.98,87977
+23526,Employee_201,528-491-3702,Software Engineer,Chicago,139153.67,39909
+99753,Employee_202,978-597-8676,Software Engineer,Austin,115222.52,77675
+32600,Employee_203,731-268-9594,Software Engineer,Remote,85253.5,29026
+49825,Employee_204,472-816-7315,Software Engineer,San Francisco,137266.37,54404
+71424,Employee_205,317-597-5072,Software Engineer,San Francisco,144437.25,82194
+38463,Employee_206,509-286-4500,Software Engineer,San Francisco,144317.06,65849
+22053,Employee_207,266-843-8961,Software Engineer,San Francisco,133159.45,23566
+87144,Employee_208,311-918-7537,Software Engineer,San Francisco,128955.87,21799
+54940,Employee_209,820-996-7079,Software Engineer,Chicago,102451.1,49141
+33773,Employee_210,861-724-1330,Software Engineer,Austin,106114.98,77593
+64464,Employee_211,463-806-1707,Software Engineer,Chicago,119639.98,48724
+93026,Employee_212,376-312-8276,Software Engineer,Austin,97284.1,19091
+46113,Employee_213,421-575-3598,Software Engineer,Chicago,110430.07,75042
+11932,Employee_214,465-620-6225,Software Engineer,Chicago,121580.64,38251
+67220,Employee_215,576-999-4908,Software Engineer,Austin,107640.36,76674
+85886,Employee_216,748-477-9131,Software Engineer,Austin,95096.35,49877
+60699,Employee_217,431-226-4807,Software Engineer,Chicago,135783.29,94559
+64651,Employee_218,586-598-3360,Software Engineer,Remote,112092.99,39909
+34178,Employee_219,226-502-9769,Software Engineer,New York,131689.76,80756
+72842,Employee_220,375-434-8739,Software Engineer,Chicago,121610.43,75841
+89526,Employee_221,773-560-8039,Software Engineer,New York,131898.88,20320
+33180,Employee_222,785-962-8750,Software Engineer,Chicago,120819.79,11916
+66193,Employee_223,516-511-4141,Software Engineer,Austin,117571.87,82194
+92973,Employee_224,785-209-3744,Software Engineer,Chicago,110071.94,61962
+74090,Employee_225,458-918-2801,Software Engineer,Remote,100518.45,79928
+28646,Employee_226,891-290-2555,Software Engineer,Chicago,115124.77,33524
+78447,Employee_227,552-384-1037,Software Engineer,Austin,116264.33,49141
+90980,Employee_228,493-790-6533,Software Engineer,Austin,117075.4,43068
+66063,Employee_229,627-536-8514,Software Engineer,New York,139590.69,88182
+94275,Employee_230,866-641-1190,Software Engineer,San Francisco,133017.55,27173
+30574,Employee_231,761-969-6869,Software Engineer,Chicago,129955.92,50884
+61280,Employee_232,986-869-1715,Software Engineer,Remote,115638.63,20966
+73954,Employee_233,678-388-2438,Software Engineer,Chicago,119378.22,49141
+87835,Employee_234,551-284-3282,Software Engineer,Chicago,102014.42,49877
+78215,Employee_235,951-319-7306,Software Engineer,New York,112745.44,78501
+38512,Employee_236,417-605-9771,Software Engineer,Austin,97672.47,65849
+63867,Employee_237,484-342-2887,Software Engineer,San Francisco,119721.14,54404
+39245,Employee_238,388-805-7662,Software Engineer,Remote,108816.79,67644
+79862,Employee_239,956-725-4531,Software Engineer,Remote,103224.08,83256
+79743,Employee_240,868-374-5836,Software Engineer,Austin,114983.7,33225
+75010,Employee_241,891-630-4501,Software Engineer,Chicago,111741.97,50884
+47130,Employee_242,503-637-3187,Software Engineer,New York,121579.76,75042
+46986,Employee_243,994-237-2232,Software Engineer,Chicago,113830.38,33524
+19946,Employee_244,740-991-5219,Software Engineer,Remote,97945.56,59603
+25531,Employee_245,389-952-6074,Software Engineer,Chicago,122760.04,63237
+50784,Employee_246,675-931-7434,Software Engineer,Chicago,113694.77,76674
+16231,Employee_247,855-607-6646,Software Engineer,San Francisco,137209.48,76674
+40515,Employee_248,815-596-3867,Software Engineer,San Francisco,138247.5,80586
+42104,Employee_249,948-392-5296,Software Engineer,Chicago,108009.34,78501
+44799,Employee_250,420-862-2507,Software Engineer,Chicago,117340.54,25557
+76151,Employee_251,471-820-7899,Software Engineer,Austin,123039.07,28025
+74931,Employee_252,973-799-7904,Software Engineer,New York,142164.85,59497
+87467,Employee_253,887-255-8024,Software Engineer,San Francisco,143389.58,86031
+38981,Employee_254,288-710-1806,Software Engineer,Chicago,127543.91,69722
+58618,Employee_255,845-861-5896,Software Engineer,San Francisco,133329.6,67644
+77031,Employee_256,650-631-5169,Software Engineer,Remote,116798.02,15283
+74396,Employee_257,627-695-7128,Software Engineer,Remote,94954.69,13071
+99991,Employee_258,825-749-1552,Software Engineer,Remote,97450.25,82194
+90105,Employee_259,391-804-6887,Software Engineer,New York,110266.86,45772
+36967,Employee_260,561-433-5626,Software Engineer,Austin,127227.71,86031
+84069,Employee_261,438-234-2318,Software Engineer,Chicago,123668.5,48724
+55717,Employee_262,200-202-1686,Software Engineer,San Francisco,131079.82,54404
+95460,Employee_263,211-815-7019,Software Engineer,San Francisco,153443.55,33225
+61919,Employee_264,707-549-9631,Software Engineer,Austin,100461.83,28233
+17463,Employee_265,310-439-5732,Software Engineer,Chicago,105149.53,53326
+84275,Employee_266,421-833-9080,Software Engineer,Chicago,125235.56,63265
+10757,Employee_267,652-663-8609,Software Engineer,San Francisco,128034.38,50524
+62286,Employee_268,331-965-8675,Software Engineer,Austin,131462.41,39909
+19063,Employee_269,450-269-6347,Software Engineer,Chicago,108451.26,35285
+32709,Employee_270,879-972-1020,Software Engineer,New York,127709.41,69722
+19074,Employee_271,399-749-9251,Software Engineer,Remote,92244.5,43068
+94457,Employee_272,847-978-1119,Software Engineer,New York,140108.77,45801
+15132,Employee_273,239-650-3051,Software Engineer,New York,117208.25,47890
+87747,Employee_274,501-803-2174,Software Engineer,New York,126841.83,67644
+76219,Employee_275,470-851-8504,Software Engineer,Remote,93992.32,49141
+14756,Employee_276,569-846-1958,Software Engineer,Remote,89462.49,88182
+83709,Employee_277,215-542-3050,Software Engineer,Remote,91924.87,85716
+50716,Employee_278,504-911-9984,Software Engineer,San Francisco,129808.57,80878
+38211,Employee_279,635-846-2010,Software Engineer,New York,118189.53,75042
+93128,Employee_280,899-907-8607,Software Engineer,Chicago,106229.46,15110
+98490,Employee_281,939-536-9282,Software Engineer,Austin,93920.54,59497
+60155,Employee_282,557-346-1505,Software Engineer,New York,104503.51,87977
+52400,Employee_283,747-575-2386,Software Engineer,Chicago,113911.4,28025
+80542,Employee_284,796-286-7069,Software Engineer,San Francisco,124235.55,24710
+80886,Employee_285,854-904-8762,Software Engineer,Austin,104140.32,19973
+21746,Employee_286,300-791-3435,Software Engineer,New York,146424.52,74158
+60362,Employee_287,697-242-1947,Software Engineer,New York,139363.38,63237
+83158,Employee_288,272-610-6039,Software Engineer,Austin,136040.28,32271
+34352,Employee_289,662-830-7604,Software Engineer,Austin,96750.75,85745
+95899,Employee_290,945-309-4758,Software Engineer,San Francisco,118092.61,17718
+13061,Employee_291,871-734-5687,Software Engineer,Austin,113920.71,79630
+64811,Employee_292,545-689-8707,Software Engineer,Remote,108711.88,10275
+25801,Employee_293,798-292-4153,Software Engineer,Remote,105436.39,67644
+39354,Employee_294,961-998-9350,Software Engineer,Chicago,125324.46,79630
+57890,Employee_295,796-676-2291,Software Engineer,Remote,103097.76,15283
+20317,Employee_296,860-253-6386,Software Engineer,Chicago,97695.68,32271
+26243,Employee_297,707-496-4388,Software Engineer,Austin,95508.43,45772
+82337,Employee_298,301-555-3819,Software Engineer,New York,136229.47,29026
+75056,Employee_299,416-722-6411,Software Engineer,San Francisco,140327.63,79953
+56602,Employee_300,602-421-4081,Software Engineer,San Francisco,118190.87,79630
+31577,Employee_301,236-919-9009,Software Engineer,San Francisco,119226.34,43068
+88399,Employee_302,561-743-6576,Software Engineer,Chicago,124028.79,87977
+61821,Employee_303,995-514-9252,Software Engineer,New York,122004.64,69100
+41813,Employee_304,350-553-2443,Software Engineer,San Francisco,116076.17,21799
+82886,Employee_305,830-937-8999,Software Engineer,Remote,101021.65,31692
+86495,Employee_306,623-469-4571,Software Engineer,Austin,96203.28,34509
+67883,Employee_307,561-401-8289,Software Engineer,Chicago,130095.95,78036
+74528,Employee_308,317-694-7959,Software Engineer,San Francisco,134189.48,32271
+71834,Employee_309,911-609-4827,Software Engineer,New York,117635.26,50884
+51942,Employee_310,591-234-1554,Software Engineer,San Francisco,126008.89,33225
+66273,Employee_311,856-242-8616,Software Engineer,Austin,125288.73,45772
+69070,Employee_312,672-928-8913,Software Engineer,Chicago,126867.81,69722
+24329,Employee_313,359-226-8860,Software Engineer,Remote,97596.47,85745
+26311,Employee_314,884-894-8241,Software Engineer,San Francisco,124340.69,80756
+99244,Employee_315,762-626-2092,Software Engineer,San Francisco,122578.12,82194
+18284,Employee_316,423-579-8715,Software Engineer,New York,111960.16,66595
+86703,Employee_317,542-350-6703,Software Engineer,Austin,105805.44,32271
+80479,Employee_318,500-691-6330,Software Engineer,New York,125687.5,29026
+24084,Employee_319,800-203-7749,Software Engineer,Remote,126399.03,49141
+99568,Employee_320,995-238-6415,Software Engineer,San Francisco,139001.43,78036
+12738,Employee_321,248-460-7898,Software Engineer,San Francisco,144085.23,85716
+96078,Employee_322,857-854-6303,Software Engineer,San Francisco,151161.08,85716
+58413,Employee_323,527-260-1149,Software Engineer,Chicago,124736.54,94559
+18302,Employee_324,266-444-9041,Software Engineer,Austin,117345.46,72448
+70196,Employee_325,365-316-6823,Software Engineer,Remote,111090.73,21799
+38994,Employee_326,438-446-1285,Software Engineer,New York,126377.82,16012
+86534,Employee_327,931-486-3912,Software Engineer,Chicago,124113.29,10275
+36282,Employee_328,907-371-2269,Software Engineer,New York,122199.0,50884
+18916,Employee_329,359-538-3757,Software Engineer,Chicago,122726.85,15283
+38558,Employee_330,562-312-3235,Software Engineer,Chicago,105523.83,20018
+43818,Employee_331,391-643-7676,Software Engineer,New York,137334.36,59603
+52010,Employee_332,639-831-3644,Software Engineer,Chicago,119755.67,59497
+68526,Employee_333,352-557-6854,Software Engineer,Austin,114391.53,33524
+58979,Employee_334,316-483-6251,Software Engineer,San Francisco,142138.65,69100
+46436,Employee_335,373-532-9722,Software Engineer,Chicago,134779.21,27173
+78764,Employee_336,854-650-2136,Software Engineer,San Francisco,135404.32,20966
+53900,Employee_337,698-745-8881,Software Engineer,Remote,101096.05,88182
+59514,Employee_338,537-403-9050,Software Engineer,New York,119453.96,45772
+78545,Employee_339,946-650-5009,Software Engineer,San Francisco,140152.91,50524
+54307,Employee_340,525-701-4403,Software Engineer,New York,126658.91,74158
+14485,Employee_341,875-929-3109,Software Engineer,New York,133827.24,54404
+58551,Employee_342,816-393-1815,Software Engineer,New York,117266.51,82826
+40478,Employee_343,433-357-8015,Software Engineer,New York,115114.36,83256
+67149,Employee_344,956-699-8792,Software Engineer,Austin,101716.4,88091
+65530,Employee_345,452-584-5205,Software Engineer,San Francisco,133738.61,88091
+68920,Employee_346,959-503-4023,Software Engineer,San Francisco,140658.29,11120
+66067,Employee_347,950-814-2843,Software Engineer,New York,135412.3,37436
+13196,Employee_348,629-343-7946,Software Engineer,Austin,101978.9,23566
+81600,Employee_349,858-579-1596,Software Engineer,San Francisco,149710.31,61962
+36213,Employee_350,782-978-8427,Software Engineer,Chicago,122331.41,28875
+98607,Employee_351,751-433-3687,Software Engineer,Remote,116221.75,84272
+96171,Employee_352,381-833-9705,Software Engineer,Austin,111373.45,59497
+80763,Employee_353,886-887-6157,Software Engineer,New York,109323.56,94559
+76522,Employee_354,245-967-8428,Software Engineer,San Francisco,139966.67,94559
+51144,Employee_355,532-775-9906,Software Engineer,Chicago,110674.8,19091
+74350,Employee_356,502-659-3632,Software Engineer,Chicago,112384.09,82826
+16661,Employee_357,808-818-4264,Software Engineer,San Francisco,121487.6,47890
+26939,Employee_358,480-548-2354,Software Engineer,Chicago,94073.23,78036
+70708,Employee_359,956-295-6071,Software Engineer,Remote,107879.69,28025
+41313,Employee_360,963-847-7346,Product Manager,Remote,103697.3,82194
+71395,Employee_361,595-974-3679,Product Manager,New York,148617.94,79630
+90393,Employee_362,671-626-2939,Product Manager,New York,131131.2,20018
+57201,Employee_363,209-561-3533,Product Manager,Austin,116401.12,76674
+63742,Employee_364,805-483-4420,Product Manager,New York,137086.44,17665
+66123,Employee_365,771-344-2615,Product Manager,San Francisco,154030.96,79928
+12227,Employee_366,438-447-7341,Product Manager,Remote,119643.7,57974
+25711,Employee_367,435-598-3260,Product Manager,San Francisco,140149.28,38251
+24897,Employee_368,917-523-8483,Product Manager,Austin,138761.45,38251
+10801,Employee_369,421-406-6592,Product Manager,Remote,119457.67,85716
+96699,Employee_370,727-659-9195,Product Manager,New York,129735.33,65849
+13534,Employee_371,936-518-5684,Product Manager,Remote,108246.15,79630
+47978,Employee_372,703-287-7360,Product Manager,San Francisco,145967.78,19091
+58182,Employee_373,960-939-8844,Product Manager,Austin,118808.7,28025
+12021,Employee_374,325-823-4908,Product Manager,Remote,117329.59,80756
+83397,Employee_375,395-935-6542,Product Manager,Remote,126512.48,83256
+61439,Employee_376,891-239-9505,Product Manager,San Francisco,125822.29,28045
+48446,Employee_377,536-927-4666,Product Manager,New York,136193.12,79953
+47935,Employee_378,215-954-2804,Product Manager,Chicago,138304.88,32271
+43503,Employee_379,643-637-9588,Product Manager,San Francisco,142382.24,77675
+22925,Employee_380,215-353-3982,Product Manager,Remote,106211.88,77455
+19254,Employee_381,849-737-3451,Product Manager,Chicago,128955.33,13071
+14232,Employee_382,323-613-4085,Product Manager,Austin,119071.64,36574
+55869,Employee_383,418-663-6857,Product Manager,Austin,118827.21,13428
+32077,Employee_384,471-332-3598,Product Manager,Remote,119643.68,64914
+58593,Employee_385,242-593-1890,Product Manager,Remote,118460.83,12885
+76494,Employee_386,278-354-5154,Product Manager,New York,126984.76,49141
+71205,Employee_387,740-846-1180,Product Manager,Remote,118393.5,82826
+33632,Employee_388,402-665-7569,Product Manager,Remote,112714.47,63237
+64705,Employee_389,567-624-6051,Product Manager,Remote,114058.83,88802
+29799,Employee_390,389-897-6703,Product Manager,San Francisco,142030.54,36574
+17367,Employee_391,568-434-4469,Product Manager,Austin,116950.59,82194
+27266,Employee_392,771-849-4651,Product Manager,San Francisco,139706.68,43068
+13988,Employee_393,987-875-9780,Product Manager,Austin,112401.89,36574
+53516,Employee_394,610-264-8239,Product Manager,Remote,128890.48,23566
+54187,Employee_395,205-204-3054,Product Manager,Chicago,134350.06,29026
+28204,Employee_396,977-773-9875,Product Manager,San Francisco,142733.47,75042
+59970,Employee_397,932-203-2830,Product Manager,Chicago,128872.72,33225
+59025,Employee_398,915-625-5792,Product Manager,Austin,131244.36,77455
+83163,Employee_399,533-728-9700,Product Manager,Remote,96484.56,33225
+46368,Employee_400,969-230-8196,Product Manager,Austin,125784.91,20018
+75392,Employee_401,979-716-1680,Product Manager,Chicago,125070.42,67644
+62443,Employee_402,823-623-1454,Product Manager,Remote,120615.18,21799
+65033,Employee_403,406-533-7963,Product Manager,Remote,107013.21,74158
+74956,Employee_404,469-491-7492,Product Manager,Austin,134832.12,77593
+62370,Employee_405,347-334-2269,Product Manager,Remote,129243.94,75042
+64495,Employee_406,490-302-8227,Product Manager,New York,147023.28,33225
+47230,Employee_407,824-695-5783,Product Manager,Chicago,129005.98,25557
+78683,Employee_408,326-327-3817,Product Manager,Austin,135001.7,29026
+72964,Employee_409,329-985-2037,Product Manager,Chicago,122401.33,57974
+76074,Employee_410,843-838-5904,Product Manager,New York,142691.81,63237
+62377,Employee_411,544-438-8311,Product Manager,New York,131245.42,75042
+78184,Employee_412,990-985-3220,Product Manager,Austin,121288.14,79953
+19152,Employee_413,887-863-5156,Product Manager,Remote,107580.1,72107
+31097,Employee_414,627-485-7454,Product Manager,Chicago,135473.78,15283
+14257,Employee_415,722-728-3648,Product Manager,Chicago,130222.05,87977
+57947,Employee_416,401-576-3977,Product Manager,San Francisco,128547.46,85716
+17191,Employee_417,437-287-9082,Product Manager,Austin,135728.67,49141
+91152,Employee_418,503-772-1495,Product Manager,Austin,110370.97,23566
+75338,Employee_419,738-862-6134,Product Manager,New York,146349.78,13428
+27616,Employee_420,457-490-7985,Product Manager,San Francisco,125456.26,20018
+49203,Employee_421,204-624-1235,Product Manager,New York,138570.68,78036
+17934,Employee_422,209-213-2916,Product Manager,Chicago,119171.54,75042
+62861,Employee_423,303-842-7070,Product Manager,New York,121387.21,21799
+32540,Employee_424,858-890-3665,Product Manager,Chicago,122983.94,28875
+88861,Employee_425,212-442-6525,Product Manager,Chicago,136041.39,82826
+76507,Employee_426,756-436-3353,Product Manager,New York,128380.8,82826
+81145,Employee_427,700-368-6598,Product Manager,San Francisco,136252.64,76674
+34822,Employee_428,790-403-1199,Product Manager,Chicago,107947.05,49877
+41430,Employee_429,748-958-9845,Product Manager,Austin,117170.34,48724
+93474,Employee_430,708-962-2312,Product Manager,San Francisco,161114.2,49877
+14769,Employee_431,931-395-1221,Product Manager,New York,123253.12,32271
+18724,Employee_432,232-342-7894,Product Manager,New York,143871.87,82826
+23657,Employee_433,454-212-2249,Product Manager,San Francisco,144789.31,80586
+86261,Employee_434,632-698-9262,Product Manager,Chicago,119894.74,67644
+53678,Employee_435,715-902-1064,Product Manager,Chicago,124275.21,15110
+45423,Employee_436,421-535-8622,Product Manager,San Francisco,144692.64,33225
+66655,Employee_437,830-545-3629,Product Manager,New York,144558.66,31692
+85704,Employee_438,473-940-1387,Product Manager,Chicago,127995.56,21799
+74480,Employee_439,722-235-5315,Product Manager,Austin,98149.8,10275
+78021,Employee_440,658-964-4895,Product Manager,Chicago,113662.59,77455
+86357,Employee_441,309-525-5114,Product Manager,Austin,130178.07,94559
+92741,Employee_442,355-607-2520,Product Manager,Remote,120400.46,84272
+98860,Employee_443,733-471-8083,Product Manager,Remote,117287.53,38251
+45244,Employee_444,459-771-9627,Product Manager,Chicago,126969.46,19973
+64981,Employee_445,861-988-4439,Product Manager,San Francisco,140194.71,80586
+73392,Employee_446,938-681-1927,Product Manager,Chicago,108481.26,50524
+99581,Employee_447,576-715-9836,Product Manager,San Francisco,155031.23,72448
+36265,Employee_448,833-535-3816,Product Manager,Remote,113156.96,79928
+47310,Employee_449,694-232-1707,Product Manager,New York,140136.14,69100
+10014,Employee_450,836-255-6589,Product Manager,Chicago,113703.91,33225
+39606,Employee_451,653-961-3619,Product Manager,Chicago,105439.53,47802
+65155,Employee_452,763-470-1058,Product Manager,Remote,99525.33,27173
+20031,Employee_453,359-806-6187,Product Manager,Chicago,131494.25,45772
+76733,Employee_454,748-635-9483,Product Manager,San Francisco,146036.85,84272
+69948,Employee_455,626-880-1383,Product Manager,San Francisco,144764.62,63237
+52586,Employee_456,473-599-2243,Product Manager,Chicago,140065.96,89210
+60612,Employee_457,434-426-2530,Product Manager,Austin,120803.66,79630
+38786,Employee_458,783-780-8102,Product Manager,San Francisco,127472.38,82826
+40954,Employee_459,903-219-1909,Product Manager,New York,125006.1,86031
+13117,Employee_460,636-905-2021,Product Manager,Chicago,113352.06,49141
+30434,Employee_461,998-547-3031,Product Manager,Austin,101175.79,19091
+94345,Employee_462,869-688-8101,Product Manager,San Francisco,140748.39,79928
+73672,Employee_463,487-537-5801,Product Manager,San Francisco,161417.17,19973
+17903,Employee_464,525-260-6422,Product Manager,San Francisco,124783.56,47890
+66270,Employee_465,353-465-8147,Product Manager,New York,134638.46,79953
+44414,Employee_466,672-243-4516,Product Manager,Remote,110308.69,68693
+45966,Employee_467,629-919-3730,Product Manager,San Francisco,154983.46,79953
+26843,Employee_468,646-299-8747,Product Manager,Austin,120862.52,72448
+51707,Employee_469,252-841-3423,Product Manager,Chicago,123387.73,36574
+98589,Employee_470,313-765-6535,Product Manager,Remote,100455.96,17665
+10506,Employee_471,731-902-8013,Product Manager,Austin,103190.61,89210
+75775,Employee_472,444-487-9174,Product Manager,New York,132465.46,17665
+80438,Employee_473,454-283-2194,Product Manager,Austin,110045.11,28045
+56641,Employee_474,907-371-5855,Product Manager,Chicago,129649.85,11916
+25495,Employee_475,846-419-1238,Product Manager,San Francisco,157208.47,82826
+43205,Employee_476,818-458-2139,Product Manager,Remote,120310.16,32271
+14254,Employee_477,906-568-8916,Product Manager,New York,130494.48,77455
+20796,Employee_478,442-710-4242,Product Manager,Remote,113766.4,11120
+69329,Employee_479,354-292-6185,Product Manager,Austin,120202.82,82826
+99485,Employee_480,405-368-4371,Data Scientist,Chicago,129497.45,17665
+24731,Employee_481,731-783-3491,Data Scientist,New York,133386.24,63237
+10427,Employee_482,691-781-8361,Data Scientist,Remote,108176.6,25557
+31341,Employee_483,769-733-4214,Data Scientist,Austin,113541.39,20966
+92451,Employee_484,204-921-2548,Data Scientist,San Francisco,156447.53,79630
+65681,Employee_485,537-473-9977,Data Scientist,Austin,122741.66,57974
+63269,Employee_486,527-462-7751,Data Scientist,Remote,104847.79,85745
+20557,Employee_487,934-693-7768,Data Scientist,San Francisco,112229.2,45772
+81003,Employee_488,757-591-5019,Data Scientist,Remote,130039.59,50884
+39554,Employee_489,237-800-1230,Data Scientist,Remote,97299.02,19091
+99098,Employee_490,618-328-1173,Data Scientist,New York,137560.05,28875
+64468,Employee_491,423-924-6319,Data Scientist,San Francisco,120917.22,34509
+70818,Employee_492,890-374-1120,Data Scientist,Austin,114530.66,49141
+22874,Employee_493,925-246-4414,Data Scientist,San Francisco,128510.66,47890
+62689,Employee_494,714-508-1146,Data Scientist,Austin,108591.29,82194
+61926,Employee_495,979-851-7410,Data Scientist,Chicago,119957.9,23566
+96913,Employee_496,392-954-3896,Data Scientist,New York,129212.01,31692
+31920,Employee_497,207-516-1403,Data Scientist,San Francisco,142604.71,35285
+63988,Employee_498,288-971-8395,Data Scientist,San Francisco,139133.66,25557
+53630,Employee_499,954-309-1484,Data Scientist,Remote,116262.78,28233
+57847,Employee_500,786-228-5370,Data Scientist,San Francisco,128878.66,33225
+72277,Employee_501,622-387-5536,Data Scientist,San Francisco,129761.56,87977
+82762,Employee_502,876-619-3344,Data Scientist,Remote,123074.72,34509
+25039,Employee_503,245-694-4490,Data Scientist,New York,124887.95,21799
+21328,Employee_504,647-634-8841,Data Scientist,Austin,105392.54,19091
+60478,Employee_505,347-429-8740,Data Scientist,San Francisco,141123.69,88182
+70174,Employee_506,305-346-7479,Data Scientist,Austin,117354.94,65849
+30669,Employee_507,707-531-1216,Data Scientist,San Francisco,134944.81,48724
+84252,Employee_508,270-251-5449,Data Scientist,Remote,106123.09,89210
+91721,Employee_509,558-736-6599,Data Scientist,Chicago,142639.23,25557
+58039,Employee_510,902-527-5394,Data Scientist,Remote,109079.98,33524
+29248,Employee_511,286-614-1278,Data Scientist,Chicago,126703.49,78036
+13876,Employee_512,542-264-4293,Data Scientist,Austin,95594.79,80586
+54485,Employee_513,724-213-2408,Data Scientist,Austin,125578.34,61962
+10230,Employee_514,493-846-8319,Data Scientist,New York,115535.47,54404
+52475,Employee_515,940-457-8103,Data Scientist,Chicago,107487.33,90066
+59783,Employee_516,589-493-2721,Data Scientist,San Francisco,140498.47,82996
+13065,Employee_517,398-798-8831,Data Scientist,Austin,140839.83,74158
+44154,Employee_518,383-651-6484,Data Scientist,Austin,116536.61,85716
+63946,Employee_519,703-315-2951,Data Scientist,San Francisco,134424.68,82826
+38777,Employee_520,381-990-8631,Data Scientist,Chicago,128828.38,28233
+69206,Employee_521,937-852-4272,Data Scientist,New York,133066.62,28045
+12334,Employee_522,635-304-4871,Data Scientist,Chicago,118611.95,13071
+88212,Employee_523,597-568-6248,Data Scientist,Austin,113491.68,19091
+88899,Employee_524,570-712-6905,Data Scientist,Remote,111763.77,37035
+33274,Employee_525,566-846-6461,Data Scientist,Austin,96399.68,10073
+78268,Employee_526,623-209-7166,Data Scientist,Remote,107019.33,36793
+79330,Employee_527,592-858-4347,Data Scientist,Chicago,126883.97,75841
+50268,Employee_528,885-268-2228,Data Scientist,San Francisco,144723.09,82194
+57638,Employee_529,208-488-7165,Data Scientist,New York,115545.7,78036
+22089,Employee_530,647-815-8642,Data Scientist,San Francisco,149258.13,38251
+23059,Employee_531,831-476-5308,Data Scientist,San Francisco,140194.93,66595
+30280,Employee_532,493-689-8112,Data Scientist,San Francisco,141500.64,54404
+49558,Employee_533,814-546-4510,Data Scientist,Chicago,126118.35,78501
+72422,Employee_534,726-480-3205,Data Scientist,New York,130321.7,72448
+33530,Employee_535,885-346-5195,Data Scientist,Remote,109381.22,47802
+17651,Employee_536,389-748-8780,Data Scientist,Chicago,110399.38,79928
+20565,Employee_537,589-784-8153,Data Scientist,Austin,116972.5,25557
+55354,Employee_538,792-354-8832,Data Scientist,Remote,114288.98,17718
+46520,Employee_539,883-431-7488,Data Scientist,Austin,111554.36,76674
+59322,Employee_540,302-824-5312,Data Scientist,San Francisco,156296.81,10275
+31494,Employee_541,775-389-7433,Data Scientist,Austin,128082.09,33524
+97612,Employee_542,685-348-2435,Data Scientist,Austin,122889.42,45801
+53906,Employee_543,473-959-2043,Data Scientist,Chicago,136196.05,33225
+43326,Employee_544,435-693-2497,Data Scientist,Remote,114245.62,32271
+41243,Employee_545,768-859-2306,Data Scientist,Austin,120473.63,36574
+70503,Employee_546,826-558-9439,Data Scientist,Chicago,118430.9,74158
+61442,Employee_547,872-678-5766,Data Scientist,Remote,102827.14,19973
+48038,Employee_548,704-662-7966,Data Scientist,Chicago,118849.96,79928
+96468,Employee_549,843-975-6655,Data Scientist,Remote,114357.88,19091
+92738,Employee_550,227-985-9913,Data Scientist,Chicago,118697.59,79928
+80785,Employee_551,514-823-2112,Data Scientist,Remote,91869.2,57974
+19533,Employee_552,762-238-8594,Data Scientist,Austin,113819.59,27173
+74643,Employee_553,518-673-2873,Data Scientist,Chicago,120899.25,76674
+99196,Employee_554,638-299-6611,Data Scientist,New York,123427.8,64914
+40677,Employee_555,389-882-9117,Data Scientist,Chicago,122916.89,20966
+94950,Employee_556,554-700-8060,Data Scientist,New York,117180.05,41244
+37209,Employee_557,748-752-1577,Data Scientist,San Francisco,163023.25,81784
+59988,Employee_558,950-981-4910,Data Scientist,Austin,105837.33,12885
+44072,Employee_559,606-599-6993,Data Scientist,Austin,120519.54,12885
+88186,Employee_560,572-287-5592,Data Scientist,Remote,101242.19,77675
+60622,Employee_561,921-674-7836,Data Scientist,New York,143097.25,67644
+38857,Employee_562,446-980-6179,Data Scientist,New York,121312.71,68693
+16185,Employee_563,919-352-3040,Data Scientist,Remote,105977.26,47802
+67172,Employee_564,792-667-6238,Data Scientist,New York,127125.73,53326
+74344,Employee_565,314-922-7773,Data Scientist,Remote,103403.86,69722
+70299,Employee_566,392-532-4688,Data Scientist,New York,144220.63,75841
+47635,Employee_567,366-976-2469,Data Scientist,Remote,112191.61,77593
+48676,Employee_568,847-983-8965,Data Scientist,Austin,109080.69,13071
+31432,Employee_569,661-320-2384,Data Scientist,San Francisco,132639.25,59603
+12475,Employee_570,939-278-1856,Data Scientist,San Francisco,154976.79,72448
+14549,Employee_571,573-423-9624,Data Scientist,San Francisco,139567.65,39909
+27700,Employee_572,467-595-1486,Data Scientist,New York,126796.68,63237
+11860,Employee_573,289-292-7258,Data Scientist,San Francisco,134098.86,86031
+18706,Employee_574,834-937-8873,Data Scientist,Austin,128953.35,32271
+81452,Employee_575,506-834-8702,Data Scientist,San Francisco,147597.7,28233
+81399,Employee_576,499-245-5355,Data Scientist,Austin,109803.31,88802
+39532,Employee_577,819-721-3742,Data Scientist,New York,123020.72,61962
+23796,Employee_578,342-492-6836,Data Scientist,New York,114978.76,27173
+31212,Employee_579,255-740-7763,Data Scientist,New York,144596.25,79928
+22059,Employee_580,307-343-7161,Data Scientist,Chicago,123650.26,88802
+86957,Employee_581,406-533-8543,Data Scientist,Remote,112149.19,53326
+68967,Employee_582,582-353-9126,Data Scientist,New York,146270.82,90066
+54552,Employee_583,933-916-2246,Data Scientist,Chicago,108036.15,20018
+55057,Employee_584,628-976-9623,Data Scientist,Remote,101915.42,81784
+78631,Employee_585,581-670-9906,Data Scientist,New York,130604.08,23566
+66715,Employee_586,311-465-4467,Data Scientist,Austin,120100.22,65849
+46340,Employee_587,745-874-7354,Data Scientist,New York,150850.33,64914
+52300,Employee_588,325-953-4678,Data Scientist,Remote,109698.95,69722
+85610,Employee_589,910-667-4772,Data Scientist,Remote,113504.51,88182
+52118,Employee_590,817-882-3916,Data Scientist,Austin,116722.89,32271
+61191,Employee_591,577-490-5431,Data Scientist,Remote,123203.55,77593
+90120,Employee_592,244-422-2562,Data Scientist,San Francisco,139683.7,79953
+28919,Employee_593,702-988-7417,Data Scientist,Remote,99100.63,43068
+73962,Employee_594,289-969-5381,Data Scientist,San Francisco,133163.32,88091
+45519,Employee_595,236-367-1113,Data Scientist,Chicago,118182.05,24710
+34566,Employee_596,413-763-6720,Data Scientist,Chicago,133140.05,63265
+43687,Employee_597,896-393-5893,Data Scientist,Remote,108330.86,80878
+86256,Employee_598,294-735-6687,Data Scientist,New York,137068.91,13071
+80874,Employee_599,733-516-7453,Data Scientist,Chicago,128910.01,48724
+48425,Employee_600,863-926-2316,HR Specialist,Remote,52477.04,34509
+22410,Employee_601,811-316-4727,HR Specialist,Chicago,80815.92,88091
+56334,Employee_602,823-961-3516,HR Specialist,Remote,67109.48,76674
+55237,Employee_603,764-999-5804,HR Specialist,Remote,68477.9,82194
+34245,Employee_604,984-341-7256,HR Specialist,New York,80313.29,13428
+86467,Employee_605,851-243-2107,HR Specialist,Chicago,61326.25,76674
+37041,Employee_606,791-875-6847,HR Specialist,Austin,72447.41,82826
+76598,Employee_607,233-452-9277,HR Specialist,San Francisco,81301.19,49141
+62390,Employee_608,952-519-4596,HR Specialist,Austin,73192.21,11916
+89900,Employee_609,356-917-6990,HR Specialist,San Francisco,108483.23,49141
+56756,Employee_610,416-627-5698,HR Specialist,Chicago,78628.31,34509
+43804,Employee_611,949-481-3217,HR Specialist,Chicago,65494.58,75042
+13626,Employee_612,434-973-2089,HR Specialist,Remote,79200.32,83256
+25335,Employee_613,694-406-6284,HR Specialist,Chicago,68005.6,72107
+25891,Employee_614,665-487-4410,HR Specialist,Remote,60535.0,94559
+76496,Employee_615,349-573-9043,HR Specialist,Chicago,74925.18,77593
+25546,Employee_616,590-285-5802,HR Specialist,Austin,63560.06,13428
+93674,Employee_617,857-319-2384,HR Specialist,Austin,76600.84,82194
+80388,Employee_618,273-810-1154,HR Specialist,San Francisco,78214.06,61962
+31492,Employee_619,696-947-5273,HR Specialist,Remote,39257.63,72448
+44242,Employee_620,324-407-1825,HR Specialist,San Francisco,78299.81,20018
+87901,Employee_621,770-585-1967,HR Specialist,Remote,68845.5,13428
+79251,Employee_622,688-311-5807,HR Specialist,Chicago,77208.21,16012
+70328,Employee_623,434-372-5801,HR Specialist,New York,88952.21,36793
+24652,Employee_624,707-714-3863,HR Specialist,Chicago,81712.97,53326
+34409,Employee_625,955-534-2895,HR Specialist,New York,84992.83,19091
+53497,Employee_626,208-898-1718,HR Specialist,Austin,84079.69,85745
+55571,Employee_627,374-583-4284,HR Specialist,New York,90524.25,27173
+95688,Employee_628,392-653-5325,HR Specialist,New York,65897.73,75841
+39306,Employee_629,406-264-7623,HR Specialist,San Francisco,86930.59,39909
+79547,Employee_630,977-675-4456,HR Specialist,Austin,63995.2,10275
+60233,Employee_631,871-541-3158,HR Specialist,New York,75559.21,33225
+46238,Employee_632,706-440-5448,HR Specialist,Chicago,68989.31,79630
+97799,Employee_633,693-510-7004,HR Specialist,Austin,84274.85,85716
+15642,Employee_634,255-997-5878,HR Specialist,Chicago,78477.03,13071
+51654,Employee_635,931-685-3355,HR Specialist,Remote,72179.87,78036
+24038,Employee_636,733-430-5522,HR Specialist,Remote,72360.85,29026
+38881,Employee_637,649-349-2655,HR Specialist,New York,73526.79,11120
+66506,Employee_638,221-313-9089,HR Specialist,Austin,63141.46,77593
+53493,Employee_639,453-505-5231,HR Specialist,Austin,71493.68,78501
+13387,Employee_640,842-909-4751,HR Specialist,Chicago,77502.3,79630
+31326,Employee_641,966-804-6774,HR Specialist,San Francisco,82156.08,33524
+94879,Employee_642,896-544-3872,HR Specialist,San Francisco,76629.29,63237
+34008,Employee_643,588-696-9946,HR Specialist,Chicago,88245.73,81183
+65188,Employee_644,749-959-4526,HR Specialist,New York,81908.9,59497
+61846,Employee_645,907-534-5629,HR Specialist,Remote,36721.42,11916
+44043,Employee_646,875-807-6540,HR Specialist,Remote,63615.93,33225
+79212,Employee_647,413-768-3859,HR Specialist,Remote,70634.03,11120
+38051,Employee_648,783-240-3130,HR Specialist,San Francisco,72274.04,88091
+70972,Employee_649,739-544-4835,HR Specialist,Remote,51353.95,15110
+42825,Employee_650,685-782-4170,HR Specialist,New York,86178.91,77593
+80769,Employee_651,680-382-9653,HR Specialist,Chicago,78021.42,88182
+54522,Employee_652,612-253-7207,HR Specialist,Austin,46458.56,11916
+89603,Employee_653,283-318-7039,HR Specialist,Remote,50148.06,68693
+97359,Employee_654,811-219-6168,HR Specialist,San Francisco,96653.95,13428
+70955,Employee_655,227-652-5979,HR Specialist,San Francisco,103120.32,11120
+52632,Employee_656,420-305-8612,HR Specialist,New York,84261.21,65849
+95070,Employee_657,334-580-8235,HR Specialist,San Francisco,69393.47,85745
+94371,Employee_658,498-750-6524,HR Specialist,New York,82403.81,82996
+36015,Employee_659,602-789-9264,HR Specialist,Austin,70022.46,49141
+95553,Employee_660,686-431-3493,HR Specialist,Chicago,64777.94,81183
+32742,Employee_661,977-217-4161,HR Specialist,Austin,91855.6,15283
+54214,Employee_662,669-759-5613,HR Specialist,San Francisco,84138.82,61962
+82299,Employee_663,659-899-4275,HR Specialist,Chicago,63290.09,28025
+91708,Employee_664,272-254-1428,HR Specialist,Austin,66685.7,77675
+87367,Employee_665,420-849-6077,HR Specialist,New York,83925.34,39909
+71138,Employee_666,814-883-8043,HR Specialist,Remote,90956.66,80878
+62673,Employee_667,856-288-9717,HR Specialist,San Francisco,93671.8,39909
+93170,Employee_668,516-410-5404,HR Specialist,Remote,61094.87,23566
+29299,Employee_669,565-772-1978,HR Specialist,New York,81880.22,59603
+83566,Employee_670,239-591-8715,HR Specialist,Austin,78145.85,24710
+77866,Employee_671,832-846-3313,HR Specialist,New York,77798.38,15110
+84027,Employee_672,463-862-3317,HR Specialist,Remote,68383.65,45801
+76422,Employee_673,535-783-4858,HR Specialist,San Francisco,79583.38,81784
+24826,Employee_674,777-883-1106,HR Specialist,Chicago,65166.53,63265
+19773,Employee_675,758-263-4025,HR Specialist,Remote,67610.83,65849
+87542,Employee_676,330-566-6463,HR Specialist,Austin,74694.56,90066
+68603,Employee_677,391-478-8538,HR Specialist,San Francisco,70334.74,54404
+22480,Employee_678,922-324-9550,HR Specialist,New York,81640.53,29026
+40986,Employee_679,702-775-3854,HR Specialist,New York,67233.54,79928
+35901,Employee_680,593-996-8822,HR Specialist,Austin,66602.52,77063
+67916,Employee_681,483-345-1922,HR Specialist,Remote,70562.36,89210
+44906,Employee_682,830-973-7025,HR Specialist,San Francisco,87089.58,50524
+33712,Employee_683,936-344-8998,HR Specialist,Chicago,48007.45,38251
+85290,Employee_684,864-259-2664,HR Specialist,Chicago,74145.27,36793
+41919,Employee_685,671-272-2485,HR Specialist,Remote,76661.2,80586
+10291,Employee_686,344-302-6871,HR Specialist,Austin,74823.81,28875
+61663,Employee_687,784-716-8818,HR Specialist,New York,102884.39,27173
+26224,Employee_688,941-902-8779,HR Specialist,New York,69848.71,81183
+37213,Employee_689,841-666-2552,HR Specialist,Austin,59773.56,49877
+43854,Employee_690,908-324-8385,HR Specialist,San Francisco,92853.88,63265
+56212,Employee_691,594-846-7565,HR Specialist,Austin,88407.35,84272
+74727,Employee_692,789-354-3584,HR Specialist,Austin,73492.16,27173
+69440,Employee_693,399-266-9425,HR Specialist,San Francisco,64599.53,23566
+28805,Employee_694,315-589-2580,HR Specialist,Austin,45441.47,82194
+88378,Employee_695,964-705-1985,HR Specialist,Remote,71457.48,80756
+45076,Employee_696,927-209-9614,HR Specialist,Chicago,62644.33,13428
+26142,Employee_697,873-485-5221,HR Specialist,San Francisco,68029.9,88802
+22998,Employee_698,560-634-2595,HR Specialist,Austin,41258.91,78036
+43714,Employee_699,719-239-8170,HR Specialist,San Francisco,94371.35,20018
+19201,Employee_700,512-969-7598,HR Specialist,Chicago,81799.48,32271
+71276,Employee_701,330-577-8418,HR Specialist,Austin,70470.35,67644
+34069,Employee_702,631-539-7268,HR Specialist,Chicago,70340.22,36793
+13043,Employee_703,446-900-4973,HR Specialist,New York,80995.58,15283
+68661,Employee_704,462-992-6148,HR Specialist,Austin,73327.52,72448
+78608,Employee_705,417-453-3975,HR Specialist,New York,90387.97,78501
+47253,Employee_706,744-379-9982,HR Specialist,Chicago,65072.38,82194
+25710,Employee_707,503-999-7166,HR Specialist,New York,70204.59,54404
+86371,Employee_708,261-974-8989,HR Specialist,San Francisco,86087.85,41244
+66160,Employee_709,314-458-3358,HR Specialist,Austin,58752.89,45772
+46071,Employee_710,367-874-3774,HR Specialist,Chicago,98727.74,50884
+99473,Employee_711,873-863-7552,HR Specialist,Austin,77871.97,15110
+66824,Employee_712,952-353-5340,HR Specialist,Remote,65796.78,69100
+92957,Employee_713,591-264-1380,HR Specialist,Austin,77460.13,59497
+48778,Employee_714,897-456-2185,HR Specialist,San Francisco,81281.04,54404
+52825,Employee_715,826-310-3264,HR Specialist,Chicago,77615.83,49141
+96484,Employee_716,916-533-3123,HR Specialist,Remote,75729.4,35285
+34704,Employee_717,548-334-4843,HR Specialist,Remote,55829.7,10275
+41843,Employee_718,536-341-1372,HR Specialist,San Francisco,93814.58,29026
+84887,Employee_719,653-489-7196,HR Specialist,Remote,51390.21,13428
+34128,Employee_720,757-651-2953,HR Specialist,Chicago,71549.44,47890
+93577,Employee_721,628-395-1283,HR Specialist,Remote,56115.21,81183
+14446,Employee_722,262-207-4556,HR Specialist,Remote,62536.18,67644
+25074,Employee_723,725-707-3063,HR Specialist,Austin,74387.45,82826
+36017,Employee_724,927-761-6712,HR Specialist,San Francisco,94870.67,88091
+11907,Employee_725,346-210-4989,HR Specialist,Remote,75224.23,59603
+96532,Employee_726,461-375-8022,HR Specialist,San Francisco,96749.43,59497
+29221,Employee_727,796-658-8887,HR Specialist,Remote,51269.71,78036
+17131,Employee_728,536-315-9356,HR Specialist,San Francisco,84875.25,77593
+77415,Employee_729,639-334-1618,HR Specialist,Austin,74343.67,88182
+60961,Employee_730,848-740-1080,HR Specialist,Chicago,56095.78,80878
+96087,Employee_731,804-600-1985,HR Specialist,San Francisco,87092.71,19091
+30762,Employee_732,544-672-6931,HR Specialist,Chicago,68956.49,67644
+15121,Employee_733,689-862-2346,HR Specialist,Remote,51579.68,87977
+94893,Employee_734,889-348-4124,HR Specialist,Austin,70197.63,77675
+90013,Employee_735,549-393-8906,HR Specialist,Remote,45828.36,21799
+43938,Employee_736,778-252-4418,HR Specialist,Austin,85122.51,57974
+82902,Employee_737,454-473-5626,HR Specialist,Remote,77126.01,50884
+39761,Employee_738,247-690-6064,HR Specialist,Remote,57722.89,79928
+55204,Employee_739,934-886-9643,HR Specialist,New York,81038.28,72448
+41277,Employee_740,727-783-7113,HR Specialist,Austin,69438.74,49141
+97523,Employee_741,796-350-9964,HR Specialist,New York,80209.6,85745
+14048,Employee_742,781-634-5532,HR Specialist,Chicago,68575.27,50884
+69459,Employee_743,523-969-1256,HR Specialist,San Francisco,88044.53,77593
+79530,Employee_744,544-450-7568,HR Specialist,San Francisco,96069.48,35285
+51701,Employee_745,994-263-6031,HR Specialist,Chicago,67948.21,74158
+48664,Employee_746,305-506-8461,HR Specialist,San Francisco,90596.83,81784
+28838,Employee_747,223-256-3338,HR Specialist,New York,99873.98,80878
+53729,Employee_748,282-371-1080,HR Specialist,San Francisco,93219.08,88182
+84279,Employee_749,214-452-3876,HR Specialist,San Francisco,91870.24,37436
+67813,Employee_750,260-363-9152,HR Specialist,Remote,76852.76,32271
+26593,Employee_751,383-203-8344,HR Specialist,Chicago,58691.0,15283
+89497,Employee_752,519-405-8913,HR Specialist,New York,66508.9,66595
+36611,Employee_753,910-624-6761,HR Specialist,Remote,61314.5,54404
+24082,Employee_754,610-782-4539,HR Specialist,Austin,69183.35,17665
+36655,Employee_755,444-797-5565,HR Specialist,San Francisco,78892.3,37436
+26253,Employee_756,780-558-4622,HR Specialist,Austin,62166.71,49141
+88345,Employee_757,393-694-7911,HR Specialist,San Francisco,70596.16,34509
+25837,Employee_758,332-328-2962,HR Specialist,San Francisco,93851.9,68693
+29687,Employee_759,713-846-2293,HR Specialist,Austin,94390.8,66595
+26213,Employee_760,539-460-9359,HR Specialist,Austin,79412.27,11916
+21058,Employee_761,442-927-8713,HR Specialist,Chicago,59001.65,61962
+16190,Employee_762,443-752-9585,HR Specialist,Remote,57839.52,77455
+68998,Employee_763,977-815-3059,HR Specialist,Chicago,61431.86,53326
+58538,Employee_764,385-820-3229,HR Specialist,Austin,69161.48,75841
+47385,Employee_765,389-623-9519,HR Specialist,Chicago,80285.19,82826
+47009,Employee_766,222-513-9694,HR Specialist,Austin,56318.33,33524
+30713,Employee_767,915-568-6424,HR Specialist,Remote,83935.85,79630
+26084,Employee_768,807-317-2756,HR Specialist,Austin,55546.32,37035
+11604,Employee_769,806-954-5777,HR Specialist,Austin,53997.88,78036
+41293,Employee_770,224-374-2872,HR Specialist,Remote,72353.85,54404
+26789,Employee_771,201-432-4285,HR Specialist,Chicago,69895.07,82194
+42372,Employee_772,266-238-5369,HR Specialist,New York,83464.55,82826
+90462,Employee_773,375-334-6048,HR Specialist,Austin,64993.54,15283
+88831,Employee_774,842-790-4703,HR Specialist,Chicago,83950.23,75042
+19473,Employee_775,814-785-8648,HR Specialist,Chicago,66123.81,21799
+52813,Employee_776,467-242-1684,HR Specialist,New York,78927.31,77455
+44219,Employee_777,240-974-1994,HR Specialist,San Francisco,79704.84,12885
+82945,Employee_778,424-514-7386,HR Specialist,Chicago,77689.17,90066
+51603,Employee_779,440-455-7033,HR Specialist,San Francisco,81798.66,10073
+15615,Employee_780,209-891-6965,HR Specialist,San Francisco,92618.99,78501
+69899,Employee_781,375-698-4795,HR Specialist,Remote,71942.79,28025
+90660,Employee_782,485-505-3146,HR Specialist,New York,86696.73,74158
+11317,Employee_783,382-443-1115,HR Specialist,San Francisco,86730.89,88802
+26064,Employee_784,533-314-3310,HR Specialist,New York,74396.24,77675
+18005,Employee_785,503-889-6711,HR Specialist,San Francisco,80124.25,77675
+87909,Employee_786,537-456-8553,HR Specialist,Remote,65745.93,34509
+33120,Employee_787,930-755-8161,HR Specialist,San Francisco,92722.11,41244
+30328,Employee_788,515-388-1920,HR Specialist,Chicago,81665.13,35285
+24015,Employee_789,759-896-3433,HR Specialist,New York,78736.62,64914
+60793,Employee_790,382-870-8629,HR Specialist,San Francisco,64943.98,94559
+58874,Employee_791,893-239-2919,HR Specialist,Remote,75553.82,81784
+14358,Employee_792,875-286-6899,HR Specialist,Austin,72886.06,57974
+43998,Employee_793,333-781-6267,HR Specialist,San Francisco,85919.65,69722
+94707,Employee_794,216-220-3049,HR Specialist,Chicago,59286.82,20320
+91984,Employee_795,727-247-8881,HR Specialist,Austin,74697.16,31692
+62702,Employee_796,702-208-4977,HR Specialist,Chicago,70452.98,10275
+38911,Employee_797,921-896-9260,HR Specialist,Chicago,77725.71,63265
+55545,Employee_798,239-392-2294,HR Specialist,Remote,78427.82,72107
+76608,Employee_799,596-303-3763,HR Specialist,New York,69134.65,23566
+35469,Employee_800,346-517-3469,Sales Rep,Austin,91067.18,77455
+22098,Employee_801,457-826-1085,Sales Rep,Austin,83478.15,85745
+21698,Employee_802,300-635-7853,Sales Rep,Austin,87798.29,10073
+21654,Employee_803,474-610-7485,Sales Rep,Chicago,90133.26,20966
+19726,Employee_804,981-219-6855,Sales Rep,New York,77504.67,76674
+23307,Employee_805,768-383-2331,Sales Rep,New York,86074.75,79953
+35948,Employee_806,562-427-8318,Sales Rep,Remote,85781.92,36793
+11732,Employee_807,994-641-5739,Sales Rep,Remote,79340.87,27173
+99146,Employee_808,323-438-3508,Sales Rep,New York,89930.46,67644
+19619,Employee_809,369-675-8399,Sales Rep,San Francisco,98323.93,13071
+21207,Employee_810,667-826-4549,Sales Rep,Austin,65969.46,19973
+83379,Employee_811,650-416-9708,Sales Rep,Austin,94464.91,29026
+91819,Employee_812,800-238-5400,Sales Rep,Remote,64220.14,81183
+36994,Employee_813,231-912-9527,Sales Rep,New York,89874.55,28025
+77393,Employee_814,355-721-7565,Sales Rep,Austin,74566.68,38251
+41862,Employee_815,405-387-8125,Sales Rep,Remote,78143.05,19091
+81862,Employee_816,490-792-1702,Sales Rep,San Francisco,94676.42,19973
+48445,Employee_817,564-422-7723,Sales Rep,Remote,83971.0,82194
+73742,Employee_818,398-951-6876,Sales Rep,Remote,60892.38,83256
+95541,Employee_819,248-753-1995,Sales Rep,New York,84020.31,54404
+45274,Employee_820,306-825-7395,Sales Rep,San Francisco,83385.05,78501
+96258,Employee_821,707-346-1481,Sales Rep,Chicago,79849.86,65849
+54537,Employee_822,572-677-6582,Sales Rep,Austin,72785.06,63265
+23502,Employee_823,273-560-9983,Sales Rep,Austin,50952.95,88091
+15591,Employee_824,719-734-3368,Sales Rep,Chicago,91524.22,80756
+26380,Employee_825,439-934-9376,Sales Rep,Chicago,77514.27,86031
+27652,Employee_826,534-607-4262,Sales Rep,Remote,93839.16,28875
+36779,Employee_827,998-650-6289,Sales Rep,Chicago,95190.62,53326
+79193,Employee_828,573-943-8794,Sales Rep,New York,68956.21,37035
+50714,Employee_829,450-905-8740,Sales Rep,New York,86285.17,88182
+72755,Employee_830,375-778-9535,Sales Rep,Remote,84188.28,25557
+45916,Employee_831,545-997-8154,Sales Rep,Chicago,69317.23,79928
+51369,Employee_832,301-607-7100,Sales Rep,New York,98908.23,25557
+57696,Employee_833,472-742-5888,Sales Rep,New York,95307.21,80586
+32379,Employee_834,966-512-5365,Sales Rep,Austin,77728.29,13071
+69518,Employee_835,645-610-9682,Sales Rep,Chicago,85311.07,19973
+97784,Employee_836,454-775-7269,Sales Rep,New York,83990.21,20320
+61062,Employee_837,245-205-1959,Sales Rep,New York,102159.59,80586
+25737,Employee_838,738-261-6371,Sales Rep,Remote,71847.14,59603
+71612,Employee_839,232-224-8836,Sales Rep,Remote,78385.34,13428
+87182,Employee_840,732-694-6316,Sales Rep,Chicago,87935.23,89210
+95538,Employee_841,981-619-2613,Sales Rep,San Francisco,100540.33,16012
+92629,Employee_842,907-320-3997,Sales Rep,San Francisco,96149.11,78036
+43787,Employee_843,708-997-7024,Sales Rep,Remote,81585.52,82194
+15875,Employee_844,569-510-4642,Sales Rep,New York,83282.23,78036
+47373,Employee_845,512-824-4778,Sales Rep,San Francisco,121307.12,13428
+59973,Employee_846,880-941-3842,Sales Rep,New York,83303.53,36793
+25263,Employee_847,950-380-7431,Sales Rep,New York,79055.2,33225
+56680,Employee_848,352-910-7085,Sales Rep,San Francisco,106769.72,77063
+65063,Employee_849,255-860-6846,Sales Rep,Chicago,96199.7,15110
+83068,Employee_850,363-806-4299,Sales Rep,Austin,71139.74,45801
+16988,Employee_851,903-441-4644,Sales Rep,New York,86863.87,19973
+95441,Employee_852,881-274-3680,Sales Rep,San Francisco,98527.1,28025
+56293,Employee_853,382-646-4576,Sales Rep,Austin,83457.33,59497
+51032,Employee_854,406-795-7872,Sales Rep,Remote,86003.15,87977
+16748,Employee_855,827-909-6901,Sales Rep,Chicago,87723.53,75841
+95327,Employee_856,557-969-3867,Sales Rep,Austin,87252.92,28233
+87657,Employee_857,419-439-3092,Sales Rep,Chicago,80970.32,43068
+54251,Employee_858,876-427-7208,Sales Rep,New York,93424.99,81183
+78876,Employee_859,695-995-4864,Sales Rep,Austin,84452.22,88182
+99175,Employee_860,625-956-7154,Sales Rep,New York,98899.28,11916
+99342,Employee_861,466-397-9383,Sales Rep,Chicago,78301.52,85745
+60138,Employee_862,311-467-5212,Sales Rep,San Francisco,121879.26,80586
+75435,Employee_863,576-808-2913,Sales Rep,Austin,91478.54,31692
+91763,Employee_864,783-366-1658,Sales Rep,Chicago,83043.91,74158
+26674,Employee_865,378-326-3838,Sales Rep,San Francisco,97317.64,34509
+37815,Employee_866,261-570-4259,Sales Rep,San Francisco,82642.02,39909
+87067,Employee_867,246-269-1793,Sales Rep,New York,97103.38,68693
+45768,Employee_868,498-805-9079,Sales Rep,Remote,68162.42,47802
+21042,Employee_869,457-827-5461,Sales Rep,San Francisco,105788.64,50524
+95433,Employee_870,970-508-9820,Sales Rep,New York,84899.5,87977
+86320,Employee_871,865-871-4970,Sales Rep,Remote,64566.15,77455
+24438,Employee_872,386-996-2864,Sales Rep,San Francisco,102223.71,32271
+69554,Employee_873,265-411-5405,Sales Rep,San Francisco,108041.92,63265
+53393,Employee_874,645-547-4199,Sales Rep,Austin,94356.01,36574
+98050,Employee_875,896-673-5825,Sales Rep,San Francisco,102862.32,59497
+89244,Employee_876,788-472-6515,Sales Rep,New York,81556.11,72107
+20865,Employee_877,849-373-9092,Sales Rep,Remote,78077.7,15283
+95357,Employee_878,658-930-5860,Sales Rep,Austin,76483.01,45772
+39699,Employee_879,611-348-2228,Sales Rep,New York,91378.42,79953
+17960,Employee_880,702-539-8201,Sales Rep,Remote,82372.99,57974
+63771,Employee_881,317-693-8313,Sales Rep,Chicago,109934.77,82826
+30017,Employee_882,445-393-7137,Sales Rep,New York,93888.23,21799
+47446,Employee_883,967-965-8225,Sales Rep,New York,112210.4,28045
+33229,Employee_884,601-357-4717,Sales Rep,Austin,71554.03,88802
+95886,Employee_885,313-567-3023,Sales Rep,Chicago,83773.77,13071
+44694,Employee_886,317-887-8519,Sales Rep,Chicago,84032.68,31692
+74269,Employee_887,822-236-9065,Sales Rep,San Francisco,83868.99,10275
+50810,Employee_888,865-376-4990,Sales Rep,Remote,88632.36,90066
+48503,Employee_889,354-650-3736,Sales Rep,Chicago,93686.13,12885
+80716,Employee_890,219-849-7125,Sales Rep,Remote,74792.2,36793
+31278,Employee_891,290-677-4532,Sales Rep,San Francisco,93139.17,74158
+23300,Employee_892,405-986-9655,Sales Rep,New York,93316.16,80878
+38593,Employee_893,914-323-8457,Sales Rep,Remote,68744.27,11120
+19551,Employee_894,255-478-8635,Sales Rep,New York,96324.29,21799
+12375,Employee_895,940-859-3563,Sales Rep,New York,89340.03,33524
+92623,Employee_896,203-329-1169,Sales Rep,Chicago,83682.29,50524
+77775,Employee_897,744-923-7861,Sales Rep,Chicago,85679.32,28875
+93000,Employee_898,446-879-8643,Sales Rep,Remote,82520.35,34509
+60023,Employee_899,541-482-8746,Sales Rep,Chicago,88771.21,82194
+56802,Employee_900,769-473-8740,Sales Rep,Remote,96989.37,21799
+55677,Employee_901,478-608-5124,Sales Rep,Remote,67078.01,45801
+99840,Employee_902,212-940-5770,Sales Rep,Chicago,85347.64,25557
+83134,Employee_903,942-514-4329,Sales Rep,New York,86576.6,27173
+53951,Employee_904,294-932-7514,Sales Rep,San Francisco,98212.54,88091
+58223,Employee_905,888-791-4280,Sales Rep,San Francisco,88481.17,28045
+56223,Employee_906,732-862-5259,Sales Rep,New York,83896.15,53326
+79682,Employee_907,462-742-4671,Sales Rep,New York,106364.95,79630
+68705,Employee_908,325-708-2501,Sales Rep,Remote,72959.5,66595
+62168,Employee_909,602-552-5528,Sales Rep,Remote,78750.58,28045
+77581,Employee_910,278-510-7131,Sales Rep,San Francisco,94588.03,47802
+49477,Employee_911,389-954-1477,Sales Rep,Remote,82247.84,36574
+54056,Employee_912,652-220-3715,Sales Rep,San Francisco,87474.2,65849
+20428,Employee_913,991-385-9081,Sales Rep,New York,107501.61,59497
+54700,Employee_914,213-316-6080,Sales Rep,San Francisco,100192.19,72448
+28035,Employee_915,709-897-8757,Sales Rep,Austin,82262.7,23566
+54561,Employee_916,762-735-3189,Sales Rep,Austin,79474.27,49877
+64000,Employee_917,572-888-6949,Sales Rep,San Francisco,67336.51,11120
+50471,Employee_918,247-917-5133,Sales Rep,Austin,61125.66,88182
+16856,Employee_919,917-662-8331,Sales Rep,Chicago,86156.46,11916
+18228,Employee_920,671-557-2407,Sales Rep,Chicago,91063.99,15110
+52709,Employee_921,363-820-7216,Sales Rep,Remote,79156.35,77593
+39435,Employee_922,467-780-2605,Sales Rep,Chicago,78771.6,85716
+76536,Employee_923,570-653-3443,Sales Rep,Remote,90267.38,38251
+16710,Employee_924,631-836-9201,Sales Rep,Austin,80740.78,74158
+84987,Employee_925,597-989-1444,Sales Rep,Austin,92473.2,67644
+46927,Employee_926,850-875-9265,Sales Rep,Austin,79679.64,80756
+17305,Employee_927,396-642-1966,Sales Rep,Chicago,85134.2,79928
+94373,Employee_928,891-607-9763,Sales Rep,Chicago,82925.2,80878
+28005,Employee_929,553-416-2429,Sales Rep,San Francisco,106678.82,69722
+62951,Employee_930,908-308-1395,Sales Rep,Austin,81296.51,57974
+11542,Employee_931,984-421-1085,Sales Rep,Austin,82697.54,11120
+84614,Employee_932,947-280-3054,Sales Rep,Austin,58258.17,11120
+94104,Employee_933,900-407-5152,Sales Rep,San Francisco,102500.21,11916
+30845,Employee_934,514-528-3246,Sales Rep,San Francisco,97150.37,11120
+60637,Employee_935,308-282-8120,Sales Rep,Chicago,76099.2,43068
+90064,Employee_936,218-687-4016,Sales Rep,San Francisco,94948.97,41244
+56847,Employee_937,752-693-1126,Sales Rep,Remote,89432.85,49141
+59728,Employee_938,668-858-5630,Sales Rep,Chicago,74927.39,79630
+87058,Employee_939,995-399-7380,Sales Rep,New York,92207.85,19091
+73093,Employee_940,344-460-2616,Sales Rep,Austin,76703.15,53326
+16588,Employee_941,675-850-6657,Sales Rep,New York,92110.13,28233
+51798,Employee_942,817-214-5633,Sales Rep,Remote,81561.93,68693
+31723,Employee_943,767-384-6167,Sales Rep,New York,89330.15,27173
+26873,Employee_944,895-753-6166,Sales Rep,New York,84513.83,84272
+50417,Employee_945,828-568-4590,Sales Rep,New York,96731.05,69722
+52145,Employee_946,956-805-8975,Sales Rep,San Francisco,98184.79,28233
+35869,Employee_947,802-901-5272,Sales Rep,Remote,74580.07,12885
+41662,Employee_948,445-733-1756,Sales Rep,Remote,81113.59,12885
+79360,Employee_949,600-287-9961,Sales Rep,San Francisco,108320.96,34509
+47489,Employee_950,349-459-2326,Sales Rep,Chicago,70890.9,72448
+31300,Employee_951,251-206-6890,Sales Rep,New York,84875.47,36793
+55744,Employee_952,271-509-9837,Sales Rep,Remote,77223.51,28045
+66330,Employee_953,320-370-4989,Sales Rep,New York,86148.12,32271
+45867,Employee_954,455-726-8096,Sales Rep,San Francisco,88265.61,59603
+49258,Employee_955,382-907-4699,Sales Rep,San Francisco,85322.08,88182
+54659,Employee_956,917-925-5863,Sales Rep,New York,92072.15,88091
+18000,Employee_957,797-301-1033,Sales Rep,Chicago,79233.56,69722
+98975,Employee_958,396-829-7023,Sales Rep,Austin,84937.08,90066
+27533,Employee_959,687-671-4313,Sales Rep,San Francisco,96075.59,41244
+20725,Employee_960,884-755-7861,Sales Rep,Remote,87301.13,10073
+79392,Employee_961,871-730-1089,Sales Rep,New York,90438.35,50524
+49935,Employee_962,404-834-5983,Sales Rep,Chicago,96322.11,74158
+49222,Employee_963,992-586-4218,Sales Rep,Chicago,92661.35,13428
+42620,Employee_964,974-506-4952,Sales Rep,Austin,89648.54,72448
+19364,Employee_965,541-629-5378,Sales Rep,New York,100146.04,10073
+21504,Employee_966,703-758-3953,Sales Rep,New York,82732.08,43068
+75268,Employee_967,779-286-6950,Sales Rep,Chicago,80204.15,85716
+48033,Employee_968,645-772-3598,Sales Rep,Remote,92257.65,28875
+87959,Employee_969,392-710-3072,Sales Rep,Austin,96250.39,94559
+33548,Employee_970,601-732-4526,Sales Rep,New York,88230.4,76674
+42649,Employee_971,302-891-7514,Sales Rep,Austin,73494.24,11916
+84958,Employee_972,618-552-6372,Sales Rep,Austin,73247.55,41244
+69294,Employee_973,225-784-5157,Sales Rep,Remote,84894.03,78501
+45973,Employee_974,263-443-7319,Sales Rep,Chicago,112531.31,85745
+63533,Employee_975,863-656-9647,Sales Rep,San Francisco,88027.35,35285
+64291,Employee_976,902-552-8633,Sales Rep,Austin,81147.96,82194
+49511,Employee_977,986-245-9453,Sales Rep,New York,84145.25,33225
+79308,Employee_978,481-871-7365,Sales Rep,New York,92253.04,66595
+87310,Employee_979,665-575-1178,Sales Rep,Remote,78589.57,63265
+96312,Employee_980,738-744-2737,Sales Rep,Remote,76024.42,77675
+84359,Employee_981,967-792-5705,Sales Rep,New York,83749.81,28233
+44230,Employee_982,747-873-3417,Sales Rep,San Francisco,98503.29,87977
+45368,Employee_983,555-295-4082,Sales Rep,Remote,89181.94,33225
+31842,Employee_984,361-648-5201,Sales Rep,Austin,101257.88,50884
+57901,Employee_985,723-489-4575,Sales Rep,Chicago,70761.71,45801
+54166,Employee_986,304-564-4859,Sales Rep,San Francisco,98684.79,78501
+63642,Employee_987,396-869-3833,Sales Rep,Remote,103831.36,27173
+89240,Employee_988,230-520-6856,Sales Rep,Chicago,98033.35,63265
+52503,Employee_989,776-796-8396,Sales Rep,San Francisco,114623.59,50884
+88512,Employee_990,847-523-9194,Sales Rep,Austin,72783.94,81183
+78923,Employee_991,232-861-1924,Sales Rep,New York,90778.69,32271
+70102,Employee_992,505-291-1202,Sales Rep,Austin,74588.84,65849
+86638,Employee_993,543-963-6969,Sales Rep,Remote,66504.0,33225
+41903,Employee_994,655-216-2341,Sales Rep,Chicago,78715.08,89210
+41085,Employee_995,960-671-4864,Sales Rep,Chicago,68508.56,88802
+14904,Employee_996,614-638-9842,Sales Rep,New York,81737.59,11916
+59630,Employee_997,361-496-2991,Sales Rep,New York,118825.4,17665
+13489,Employee_998,360-663-1101,Sales Rep,San Francisco,91175.54,85716
+87643,Employee_999,833-231-2140,Sales Rep,Chicago,92627.33,41244
