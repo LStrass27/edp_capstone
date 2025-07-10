@@ -3,6 +3,8 @@ import HomeIntro from "./components/HomeIntro";
 import MyAccount from "./components/MyAccount";
 import Directory from "./components/Directory";
 import AdvancedSearch from "./components/AdvancedSearch";
+import RequireAuth from "./components/RequireAuth";
+import { AuthProvider } from './hooks/AuthContext';
 
 import "./App.css";
 
@@ -49,18 +51,22 @@ function App() {
       </nav>
 
       <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-        <Routes>
-          <Route path="/" element={
-            <div className="home-intro-container">
-              <HomeIntro />
-            </div>
-          } />
-          <Route path="/account" element={<MyAccount />} />
-          {/* Add other routes as needed */}
-          <Route path="/login" element={<div className="home-intro-container"><h2>Login Page</h2></div>} />
-          <Route path="/directory" element={<Directory />} />
-          <Route path="/advanced-search" element={<AdvancedSearch />} />
-        </Routes>
+        <AuthProvider>
+          <Routes>
+            <Route path="/login" element={<div className="home-intro-container"><h2>Login Page</h2></div>} />
+            <Route path="/" element={
+              <div className="home-intro-container">
+                <HomeIntro />
+              </div>
+            } />
+           
+           <Route path="/account" element={<RequireAuth> <MyAccount /></RequireAuth>} />
+            <Route path="/directory" element={<RequireAuth> <Directory /></RequireAuth>} />
+              
+            <Route path="/advanced-search" element={<RequireAuth> <AdvancedSearch /></RequireAuth>} />
+            
+          </Routes>
+        </AuthProvider>
       </main>
     </Router>
   )
