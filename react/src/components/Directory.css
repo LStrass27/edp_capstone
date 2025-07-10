@@ -23,3 +23,21 @@
   margin: 0;
   padding: 15px 0;
 }
+
+.loading-container, .error-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #fffde7;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.loading-container p {
+  color: #555;
+  font-size: 18px;
+}
+
+.error-container p {
+  color: #d32f2f;
+  font-size: 18px;
+}

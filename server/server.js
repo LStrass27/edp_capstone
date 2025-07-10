@@ -5,29 +5,38 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import session from 'express-session'; 
 
-
-
 dotenv.config();
+
 const client = await MongoClient.connect(process.env.MONGO_DB_URL);
 const db = client.db(process.env.MONGO_DB);
 
 const app = express();
-app.use(cors({
-    origin: 'http://localhost:3000', // Or true for development
-    credentials: true  // This is critical for cookies to work with CORS
-}));
 const PORT = 3000;
+
+const allowedOrigins = ['http://localhost:5173'];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use(session({
-    secret: process.env.SECRET_KEY, 
-    resave: false,
-    saveUninitialized: false,
-    cookie: { 
-        secure: false,  // Change to false for HTTP development
-        httpOnly: true,
-        sameSite: 'lax'
-    }
+  secret: process.env.SECRET_KEY,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    secure: false,
+    httpOnly: true,
+    sameSite: 'lax'
+  }
 }));
 
 app.use((req, res, next) => {
@@ -51,6 +60,7 @@ const requireAuth = (req, res, next) => {
 app.post('/login', async (req, res) => {
     try {
       const { username, password } = req.body;
+      console.log(username, password)
       
       const usersColl = db.collection(process.env.MONGO_DB_COLLECTION_USERS);
       const user = await usersColl.findOne({ username: username, password: password });
@@ -70,8 +80,12 @@ app.post('/login', async (req, res) => {
       // Store user ID in session
       req.session.userId = emp.employee_id.toString();
       req.session.job_role = emp.job_role;
+<<<<<<< HEAD
       req.session.reports_to = emp.reports_to ? user.reprots_to.toString() : null;
+=======
+      req.session.reports_to = emp.reports_to ? user.reports_to.toString() : null;
       
+>>>>>>> 153d9aebf0df72eb290e7d02cd8d654f832a5f2f
       res.json(emp);
     } catch (err) {
       console.error("Login error:", err);
@@ -79,9 +93,12 @@ app.post('/login', async (req, res) => {
     }
   });
 
+<<<<<<< HEAD
+=======
 
 
-app.get('/employees', requireAuth, async (req, res) => {
+>>>>>>> 153d9aebf0df72eb290e7d02cd8d654f832a5f2f
+app.get('/directory', requireAuth, async (req, res) => {
     try {
         
         const collection = db.collection(process.env.MONGO_DB_COLLECTION_EMPLOYEES);
@@ -93,6 +110,7 @@ app.get('/employees', requireAuth, async (req, res) => {
 
         const filteredEmps = employees.map(e => {
             const employee = {...e};
+
             const check = (req.user.id === employee.employee_id.toString() || req.user.job_role.includes("HR") || employee.reports_to === req.user.id);
 
             if(!check) {
@@ -149,6 +167,15 @@ app.post('/search', requireAuth, async (req, res) => {
     }
 });
 
+app.post('/logout', (req, res) => {
+    req.session.destroy((err) => {
+      if (err) {
+        return res.status(500).json({ message: 'Failed to logout' });
+      }
+      res.json({ message: 'Logged out successfully' });
+    });
+});
+  
 
 
 

@@ -3,7 +3,6 @@ import EmpCardDisplay from './EmpCardDisplay';
 import ASFilterBox from './ASFilterBox';
 import edeData from './ede.json';
 
-
 function AdvancedSearch() {
     const [data, setData] = useState(edeData);
     const [filteredData, setFilteredData] = useState(edeData);
