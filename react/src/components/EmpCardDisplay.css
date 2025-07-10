@@ -1,0 +1,9 @@
+.card-display-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #fffde7; /* Light yellow background */
+  padding: 20px;
+  border-radius: 8px;
+  justify-content: center;
+}
