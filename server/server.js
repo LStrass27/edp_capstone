@@ -12,10 +12,6 @@ const client = await MongoClient.connect(process.env.MONGO_DB_URL);
 const db = client.db(process.env.MONGO_DB);
 
 const app = express();
-app.use(cors({
-    origin: 'http://localhost:3000', // Or true for development
-    credentials: true  // This is critical for cookies to work with CORS
-}));
 const PORT = 3000;
 app.use(express.json());
 
@@ -71,7 +67,6 @@ app.post('/login', async (req, res) => {
       req.session.userId = emp.employee_id.toString();
       req.session.job_role = emp.job_role;
       req.session.reports_to = emp.reports_to ? user.reprots_to.toString() : null;
-      
       res.json(emp);
     } catch (err) {
       console.error("Login error:", err);
@@ -79,9 +74,7 @@ app.post('/login', async (req, res) => {
     }
   });
 
-
-
-app.get('/employees', requireAuth, async (req, res) => {
+app.get('/directory', requireAuth, async (req, res) => {
     try {
         
         const collection = db.collection(process.env.MONGO_DB_COLLECTION_EMPLOYEES);
@@ -93,6 +86,7 @@ app.get('/employees', requireAuth, async (req, res) => {
 
         const filteredEmps = employees.map(e => {
             const employee = {...e};
+
             const check = (req.user.id === employee.employee_id.toString() || req.user.job_role.includes("HR") || employee.reports_to === req.user.id);
 
             if(!check) {
@@ -148,6 +142,7 @@ app.post('/search', requireAuth, async (req, res) => {
         res.status(500).send("Error Status 500");
     }
 });
+
 
 
 

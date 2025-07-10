@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../hooks/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import './LoginForm.css'; // You'll need to create this CSS file
 
 function LoginForm() {
     const [username, setUsername] = useState('');
@@ -16,32 +17,35 @@ function LoginForm() {
     };
 
     return (
-        <div className="container">
-            <form onSubmit={handleLogin} className="mt-5">
-                <div className="form-group">
-                    <label htmlFor="username">Username</label>
-                    <input
-                        type="text"
-                        className="form-control"
-                        id="username"
-                        placeholder="Enter username"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="password">Password</label>
-                    <input
-                        type="password"
-                        className="form-control"
-                        id="password"
-                        placeholder="Password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                </div>
-                <button type="submit" className="btn btn-primary">Login</button>
-            </form>
+        <div className="login-container">
+            <div className="login-card">
+                <h2 className="login-title">Login</h2>
+                <form onSubmit={handleLogin} className="login-form">
+                    <div className="form-group">
+                        <label htmlFor="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Enter username"
+                            value={username}
+                            onChange={(e) => setUsername(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="password">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <button type="submit" className="login-button">Login</button>
+                </form>
+            </div>
         </div>
     );
 }
