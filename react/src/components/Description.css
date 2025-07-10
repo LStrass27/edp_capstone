@@ -1,0 +1,36 @@
+.card {
+  background-color: #fffdf0; /* Very light yellow background */
+  border: 1px solid #f5e7a3;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(244, 208, 63, 0.2);
+  margin: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(244, 208, 63, 0.3);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  color: #b7950b; /* Darker yellow/gold for title */
+  border-bottom: 2px solid #f9e79f;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #7d6608; /* Dark yellow-brown for text */
+  margin-bottom: 8px;
+  padding: 5px 0;
+  border-bottom: 1px dotted #f7dc6f;
+}
+
+.card-text:last-child {
+  border-bottom: none;
+}

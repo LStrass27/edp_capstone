@@ -1,0 +1,28 @@
+.navbar {
+  background-color: #FFFACD !important; /* Light yellow color (Lemon Chiffon) */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add dividers between nav items */
+.navbar-nav .nav-item:not(:last-child) {
+  border-right: 1px solid #ddd;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Style for the HomeIntro component */
+.home-intro-container {
+  background-color: #FFFACD; /* Same light yellow as navbar */
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* Center the main content */
+main.col-md-9 {
+  margin: 0 auto;
+  float: none;
+}
