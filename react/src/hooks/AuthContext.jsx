@@ -11,9 +11,11 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         const checkLoggedIn = async () => {
           try {
-            const response = await fetch(`${import.meta.env.VITE_ACCOUNT_URL}`, {
-              credentials: 'include' // Important for sending cookies
-            });
+            const accountUrl = import.meta.env.VITE_ACCOUNT_URL;
+            const response = await fetch(accountUrl, {
+                credentials: 'include' // Important for sending cookies
+              });
+
             
             if (response.ok) {
               const userData = await response.json();
@@ -31,16 +33,21 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (username, password) => {
         try {
-            const response = await fetch(`${import.meta.env.VITE_LOGIN_URL}`, {
+            const loginUrl = import.meta.env.VITE_LOGIN_URL;
+            
+            console.log('Attempting login to:', loginUrl);
+            
+            const response = await fetch(loginUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
+                credentials: 'include', // Add this to ensure cookies are sent
                 body: JSON.stringify({ username, password }),
             });
-            
-            if(!response.ok) {
-                throw new Error('Login failed');
+            if (!response.ok) {
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Login failed');
             }
 
             const userData = await response.json();
