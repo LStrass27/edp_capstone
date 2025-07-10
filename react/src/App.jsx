@@ -3,6 +3,7 @@ import HomeIntro from "./components/HomeIntro";
 import MyAccount from "./components/MyAccount";
 import Directory from "./components/Directory";
 import AdvancedSearch from "./components/AdvancedSearch";
+import SalaryPredictor from "./components/SalaryPredictor";
 
 import "./App.css";
 
@@ -39,6 +40,9 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to="/advanced-search">Advanced Search</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/predict-salary">Predict Salary</Link>
+              </li>
             </ul>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -60,6 +64,7 @@ function App() {
           <Route path="/login" element={<div className="home-intro-container"><h2>Login Page</h2></div>} />
           <Route path="/directory" element={<Directory />} />
           <Route path="/advanced-search" element={<AdvancedSearch />} />
+          <Route path="/predict-salary" element={<SalaryPredictor />} />
         </Routes>
       </main>
     </Router>
