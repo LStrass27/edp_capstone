@@ -11,13 +11,12 @@ function LoginForm() {
  
     const handleLogin = async (event) => {
         event.preventDefault();
-        setError('');
 
         try {
             await login(username, password);
             navigate('/directory')
         } catch (err) {
-            setError(err.message || "Login Failed in LoginForm.jsx");
+            console.log("Login Failed in LoginForm.jsx");
         }
     };
  

@@ -2,6 +2,7 @@ import Description from "./components/Description";
 import HomeIntro from "./components/HomeIntro";
 import MyAccount from "./components/MyAccount";
 import Directory from "./components/Directory";
+import LoginForm from "./components/LoginForm";
 import AdvancedSearch from "./components/AdvancedSearch";
 import RequireAuth from "./components/RequireAuth";
 import { AuthProvider } from './hooks/AuthContext';
@@ -53,7 +54,7 @@ function App() {
       <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <AuthProvider>
           <Routes>
-            <Route path="/login" element={<div className="home-intro-container"><h2>Login Page</h2></div>} />
+            <Route path="/login" element={<LoginForm />} />
             <Route path="/" element={
               <div className="home-intro-container">
                 <HomeIntro />

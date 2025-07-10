@@ -5,25 +5,38 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import session from 'express-session'; 
 
-
-
 dotenv.config();
+
 const client = await MongoClient.connect(process.env.MONGO_DB_URL);
 const db = client.db(process.env.MONGO_DB);
 
 const app = express();
 const PORT = 3000;
+
+const allowedOrigins = ['http://localhost:5173'];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.use(session({
-    secret: process.env.SECRET_KEY, 
-    resave: false,
-    saveUninitialized: false,
-    cookie: { 
-        secure: false,  // Change to false for HTTP development
-        httpOnly: true,
-        sameSite: 'lax'
-    }
+  secret: process.env.SECRET_KEY,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    secure: false,
+    httpOnly: true,
+    sameSite: 'lax'
+  }
 }));
 
 app.use((req, res, next) => {
@@ -47,6 +60,7 @@ const requireAuth = (req, res, next) => {
 app.post('/login', async (req, res) => {
     try {
       const { username, password } = req.body;
+      console.log(username, password)
       
       const usersColl = db.collection(process.env.MONGO_DB_COLLECTION_USERS);
       const user = await usersColl.findOne({ username: username, password: password });
