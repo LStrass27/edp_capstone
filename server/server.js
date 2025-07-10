@@ -127,9 +127,10 @@ app.get('/account', requireAuth, async (req, res) => {
     console.log("INSIDE /ACCOUNT");
 
     try {
+        console.log(req.user.id);
         
         const collection = db.collection(process.env.MONGO_DB_COLLECTION_EMPLOYEES);
-        const employee = await collection.findOne({employee_id: req.user.id});
+        const employee = await collection.findOne({employee_id: parseInt(req.user.id)});
         if(!employee) {
             return res.status(404).send("No employee exists");
         }
