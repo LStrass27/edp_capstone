@@ -3,7 +3,7 @@ import HomeIntro from "./components/HomeIntro";
 import MyAccount from "./components/MyAccount";
 import Directory from "./components/Directory";
 import AdvancedSearch from "./components/AdvancedSearch";
-import SalaryPredictor from "./components/SalaryPredictor";
+import SalaryPredictor from "./components/SalaryPredictor"; /// addded
 
 import "./App.css";
 
@@ -42,7 +42,7 @@ function App() {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/predict-salary">Predict Salary</Link>
-              </li>
+              </li>  
             </ul>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

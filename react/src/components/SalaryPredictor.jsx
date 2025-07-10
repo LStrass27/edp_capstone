@@ -8,11 +8,12 @@ function SalaryPredictor() {
 
   const handlePredict = async () => {
     try {
-      const response = await fetch('http://localhost:5000/predict', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ job_role: jobRole, location })
-      });
+        const response = await fetch('/predict', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ job_role: jobRole, location })
+          });          
+      
 
       const data = await response.json();
       if (response.ok) {
