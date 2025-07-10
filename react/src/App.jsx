@@ -68,7 +68,7 @@ function App() {
             <Route path="/account" element={<RequireAuth> <MyAccount /></RequireAuth>} />
             <Route path="/directory" element={<RequireAuth> <Directory /></RequireAuth>} />
             <Route path="/advanced-search" element={<RequireAuth> <AdvancedSearch /></RequireAuth>} />
-            <Route path="/predict-salary" element={<SalaryPredictor />}
+            <Route path="/predict-salary" element={<SalaryPredictor />} />
           </Routes>
         </AuthProvider>
       </main>
