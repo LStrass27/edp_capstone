@@ -1,19 +1,18 @@
 import React from 'react';
-import Description from './Description';
+import EmpCardDisplay from './EmpCardDisplay';
+import edeData from './ede.json';
+import './Directory.css';
 
-function MyAccount() {
+function Directory() {
+  
   return (
-    <div className="home-intro-container">
-      <h2>My Account</h2>
-      <Description 
-        name="Test Duck"
-        phone="555-123-4567"
-        role="Software Developer"
-        loc="Pond Office"
-        sal="75000"
-      />
+    <div className="directory-container">
+      <div className="directory-header">
+        <h2>Full Employee Directory</h2>
+      </div>
+      <EmpCardDisplay employeeData={edeData}/>
     </div>
   );
 }
 
-export default MyAccount;
+export default Directory;

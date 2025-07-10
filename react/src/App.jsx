@@ -1,6 +1,9 @@
 import Description from "./components/Description";
 import HomeIntro from "./components/HomeIntro";
-import MyAccount from "./components/MyAccount"; // Import the new component
+import MyAccount from "./components/MyAccount";
+import Directory from "./components/Directory";
+import AdvancedSearch from "./components/AdvancedSearch";
+
 import "./App.css";
 
 import {
@@ -55,8 +58,8 @@ function App() {
           <Route path="/account" element={<MyAccount />} />
           {/* Add other routes as needed */}
           <Route path="/login" element={<div className="home-intro-container"><h2>Login Page</h2></div>} />
-          <Route path="/directory" element={<div className="home-intro-container"><h2>Directory Page</h2></div>} />
-          <Route path="/advanced-search" element={<div className="home-intro-container"><h2>Advanced Search</h2></div>} />
+          <Route path="/directory" element={<Directory />} />
+          <Route path="/advanced-search" element={<AdvancedSearch />} />
         </Routes>
       </main>
     </Router>

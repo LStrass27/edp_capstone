@@ -1,0 +1,25 @@
+.directory-container {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.directory-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.directory-header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #fffde7;
+}
+
+.directory-header h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0;
+  padding: 15px 0;
+}
