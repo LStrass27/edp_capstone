@@ -66,7 +66,12 @@ app.post('/login', async (req, res) => {
       // Store user ID in session
       req.session.userId = emp.employee_id.toString();
       req.session.job_role = emp.job_role;
+<<<<<<< HEAD
       req.session.reports_to = emp.reports_to ? user.reprots_to.toString() : null;
+=======
+      req.session.reports_to = emp.reports_to ? user.reports_to.toString() : null;
+      
+>>>>>>> 153d9aebf0df72eb290e7d02cd8d654f832a5f2f
       res.json(emp);
     } catch (err) {
       console.error("Login error:", err);
@@ -74,6 +79,11 @@ app.post('/login', async (req, res) => {
     }
   });
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 153d9aebf0df72eb290e7d02cd8d654f832a5f2f
 app.get('/directory', requireAuth, async (req, res) => {
     try {
         
@@ -143,7 +153,15 @@ app.post('/search', requireAuth, async (req, res) => {
     }
 });
 
-
+app.post('/logout', (req, res) => {
+    req.session.destroy((err) => {
+      if (err) {
+        return res.status(500).json({ message: 'Failed to logout' });
+      }
+      res.json({ message: 'Logged out successfully' });
+    });
+});
+  
 
 
 

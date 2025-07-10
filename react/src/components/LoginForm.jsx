@@ -8,14 +8,19 @@ function LoginForm() {
     const [password, setPassword] = useState('');
     const { login } = useAuth();
     const navigate = useNavigate();
-
+ 
     const handleLogin = async (event) => {
         event.preventDefault();
-        await login(username, password);
-        console.log(username, password);
-        navigate('/add');
-    };
+        setError('');
 
+        try {
+            await login(username, password);
+            navigate('/directory')
+        } catch (err) {
+            setError(err.message || "Login Failed in LoginForm.jsx");
+        }
+    };
+ 
     return (
         <div className="login-container">
             <div className="login-card">
@@ -49,5 +54,5 @@ function LoginForm() {
         </div>
     );
 }
-
+ 
 export default LoginForm;
