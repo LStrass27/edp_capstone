@@ -6,6 +6,7 @@ const AuthContext = createContext();
 // Auth provider component that wraps your app components
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const checkLoggedIn = async () => {
@@ -15,12 +16,14 @@ export const AuthProvider = ({ children }) => {
             });
             
             if (response.ok) {
-              const userData = await response.text();
+              const userData = await response.json();
               setUser(userData);
             }
           } catch (error) {
             console.error('Error checking authentication:', error);
-          } 
+          } finally {
+            setLoading(false);
+          }
         };
         
         checkLoggedIn();
@@ -37,14 +40,15 @@ export const AuthProvider = ({ children }) => {
             });
             
             if(!response.ok) {
-                const error = await response.json();
-                console.error(error);
+                throw new Error('Login failed');
             }
 
             const userData = await response.json();
             setUser(userData);
+            return userData;
         } catch (error) {
-            console.error(error);
+            console.error('Login Error: ', error);
+            throw error;
         }
     };
 
@@ -53,7 +57,7 @@ export const AuthProvider = ({ children }) => {
     };
 
     return (
-        <AuthContext.Provider value={{ user, login, logout }}>
+        <AuthContext.Provider value={{ user, login, logout, loading }}>
             {children}
         </AuthContext.Provider>
     );
