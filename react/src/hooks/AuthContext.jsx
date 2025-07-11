@@ -45,6 +45,9 @@ export const AuthProvider = ({ children }) => {
                 credentials: 'include', // Add this to ensure cookies are sent
                 body: JSON.stringify({ username, password }),
             });
+
+            console.log(response)
+            
             if (!response.ok) {
                 const errorData = await response.json();
                 throw new Error(errorData.message || 'Login failed');

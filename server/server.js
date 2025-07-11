@@ -84,13 +84,13 @@ app.post('/login', async (req, res) => {
 
       req.session.reports_to = emp.reports_to ? user.reports_to : null;
       
+
       res.json(emp);
     } catch (err) {
       console.error("Login error:", err);
       res.status(500).json({ message: 'Server error during login' });
     }
   });
-
 
 app.get('/directory', requireAuth, async (req, res) => {
     console.log("INSIDE /DIRECTORY");
@@ -178,19 +178,6 @@ app.post('/logout', (req, res) => {
     });
 });
   
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
