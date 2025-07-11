@@ -79,10 +79,10 @@ app.post('/login', async (req, res) => {
       }
       
       // Store user ID in session
-      req.session.userId = emp.employee_id.toString();
+      req.session.userId = emp.employee_id;
       req.session.job_role = emp.job_role;
 
-      req.session.reports_to = emp.reports_to ? user.reports_to.toString() : null;
+      req.session.reports_to = emp.reports_to ? user.reports_to : null;
       
       res.json(emp);
     } catch (err) {
