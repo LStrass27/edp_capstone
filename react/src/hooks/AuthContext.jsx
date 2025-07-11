@@ -62,8 +62,30 @@ export const AuthProvider = ({ children }) => {
         }
     };
 
-    const logout = () => {
-        setUser(null); // In real scenarios, you might want to invalidate the session on the server as well
+    const logout = async () => {
+      try {
+          const logoutUrl = import.meta.env.VITE_LOGOUT_URL;
+          const response = await fetch(logoutUrl, {
+              method: 'POST',
+              credentials: 'include',
+              headers: {
+                  'Content-Type': 'application/json'
+              }
+          });
+          
+          if (response.ok) {
+              setUser(null);
+              // Optionally redirect to login page
+              window.location.href = '/login';
+              return true;
+          } else {
+              console.error('Logout failed');
+              return false;
+          }
+      } catch (error) {
+          console.error('Error during logout:', error);
+          return false;
+      }
     };
 
     return (

@@ -5,6 +5,7 @@ import Directory from "./components/Directory";
 import LoginForm from "./components/LoginForm";
 import AdvancedSearch from "./components/AdvancedSearch";
 import SalaryPredictor from "./components/SalaryPredictor";
+import LogoutBtn from "./components/LogoutBtn";
 import RequireAuth from "./components/RequireAuth";
 import { AuthProvider } from './hooks/AuthContext';
 
@@ -19,6 +20,7 @@ import {
 
 function App() {
   return (
+    <AuthProvider>
     <Router>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
@@ -46,6 +48,9 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to="/predict-salary">Predict Salary</Link>
               </li>  
+              <li className="nav-item">
+                <LogoutBtn />
+              </li>  
             </ul>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -56,7 +61,7 @@ function App() {
       </nav>
 
       <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-        <AuthProvider>
+        
           <Routes>
             <Route path="/login" element={<LoginForm />} />
             <Route path="/" element={
@@ -70,9 +75,11 @@ function App() {
             <Route path="/advanced-search" element={<RequireAuth> <AdvancedSearch /></RequireAuth>} />
             <Route path="/predict-salary" element={<SalaryPredictor />} />
           </Routes>
-        </AuthProvider>
+        
       </main>
+      
     </Router>
+    </AuthProvider>
   )
 }
 
