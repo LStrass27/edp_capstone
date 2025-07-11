@@ -1,0 +1,77 @@
+.salary-predictor-container {
+    background-color: #fffde7;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .salary-predictor-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .salary-predictor-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .salary-predictor-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .salary-predictor-form input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .salary-predictor-form input:focus {
+    border-color: #FFDE59;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 222, 89, 0.2);
+  }
+  
+  .salary-predictor-button {
+    width: 100%;
+    background-color: #FFDE59;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .salary-predictor-button:hover {
+    background-color: #FFD21F;
+  }
+  
+  .salary-result {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #2e7d32;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+  }
+  
+  .salary-error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: red;
+  }
