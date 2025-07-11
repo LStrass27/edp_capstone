@@ -34,9 +34,7 @@ export const AuthProvider = ({ children }) => {
     const login = async (username, password) => {
         try {
             const loginUrl = import.meta.env.VITE_LOGIN_URL;
-            
-            console.log('Attempting login to:', loginUrl);
-            
+                        
             const response = await fetch(loginUrl, {
                 method: 'POST',
                 headers: {
@@ -45,8 +43,6 @@ export const AuthProvider = ({ children }) => {
                 credentials: 'include', // Add this to ensure cookies are sent
                 body: JSON.stringify({ username, password }),
             });
-
-            console.log(response)
             
             if (!response.ok) {
                 const errorData = await response.json();

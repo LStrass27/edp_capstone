@@ -10,7 +10,7 @@ const ASFilterBox = ({ onFilterChange }) => {
     location: true
   });
 
-    const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true);
 
   // Handle search input changes
   const handleSearchChange = (e) => {
@@ -74,7 +74,7 @@ const ASFilterBox = ({ onFilterChange }) => {
               className="search-input"
             />
             <button className="search-button">
-              <i className="search-icon">🔍</i>
+              <i className="search-icon">Search</i>
             </button>
           </div>
           
