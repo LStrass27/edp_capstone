@@ -32,7 +32,6 @@ function MyAccount() {
         };
 
         fetchData();
-        console.log("MY ACCOUNT DATA:", data);
         
     }, []);
 
