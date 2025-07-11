@@ -2,5 +2,14 @@
   "dependencies": {
     "bootstrap": "^5.3.7",
     "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "scripts": {
+    "start-react": "cd react && npm run dev",
+    "start-express": "cd server && node server.js",
+    "start-python": "cd data && python app.py",
+    "start": "concurrently \"npm run start-react\" \"npm run start-express\" \"npm run start-python\""
   }
 }

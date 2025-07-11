@@ -64,7 +64,8 @@ app.post('/login', async (req, res) => {
       
       const usersColl = db.collection(process.env.MONGO_DB_COLLECTION_USERS);
       const user = await usersColl.findOne({ username: username});
-      
+      console.log("USER: ", user);
+
       if (!user) {
         return res.status(401).json({ message: 'Invalid credentials' });
       }
@@ -72,7 +73,7 @@ app.post('/login', async (req, res) => {
     
       const empColl = db.collection(process.env.MONGO_DB_COLLECTION_EMPLOYEES);
       const emp = await empColl.findOne({ employee_id: parseInt(password)});
-      console.log(emp);
+      console.log("EMPLOYEE: ", emp);
 
       if (!emp) {
         return res.status(401).json({ message: 'Invalid credentials' });
@@ -107,7 +108,7 @@ app.get('/directory', requireAuth, async (req, res) => {
         const filteredEmps = employees.map(e => {
             const employee = {...e};
 
-            const check = (req.user.id === employee.employee_id.toString() || req.user.job_role.includes("HR") || employee.reports_to === req.user.id);
+            const check = (req.user.id === employee.employee_id || req.user.job_role.includes("HR") || employee.reports_to === req.user.id);
 
             if(!check) {
                 delete employee.salary;
@@ -175,6 +176,14 @@ app.post('/logout', (req, res) => {
         return res.status(500).json({ message: 'Failed to logout' });
       }
       res.json({ message: 'Logged out successfully' });
+    });
+});
+
+app.use((req, res) => {
+    console.log(`Page not found: ${req.originalUrl}`);
+    res.status(404).json({ 
+        message: 'Page not found',
+        error: `The requested URL ${req.originalUrl} was not found on this server.`
     });
 });
   

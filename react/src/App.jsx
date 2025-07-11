@@ -6,6 +6,7 @@ import LoginForm from "./components/LoginForm";
 import AdvancedSearch from "./components/AdvancedSearch";
 import SalaryPredictor from "./components/SalaryPredictor";
 import LogoutBtn from "./components/LogoutBtn";
+import NotFound from "./components/NotFound";
 import RequireAuth from "./components/RequireAuth";
 import { AuthProvider } from './hooks/AuthContext';
 
@@ -70,6 +71,8 @@ function App() {
             <Route path="/directory" element={<RequireAuth> <Directory /></RequireAuth>} />
             <Route path="/advanced-search" element={<RequireAuth> <AdvancedSearch /></RequireAuth>} />
             <Route path="/predict-salary" element={<SalaryPredictor />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         
       </main>
