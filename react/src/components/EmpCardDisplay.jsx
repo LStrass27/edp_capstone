@@ -13,6 +13,7 @@ const EmpCardDisplay = ({employeeData}) => {
                         role={emp.job_role} 
                         loc={emp.location} 
                         phone={emp.phone_number}
+                        salary = {emp.salary}
                     />
                 ))
             }
