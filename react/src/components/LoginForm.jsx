@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../hooks/AuthContext';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './LoginForm.css'; // You'll need to create this CSS file
+import './LoginForm.css';
 
 function LoginForm() {
     const [username, setUsername] = useState('');
