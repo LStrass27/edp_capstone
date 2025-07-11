@@ -110,4 +110,4 @@ output_path = os.path.join(os.path.dirname(__file__), "employee_data.csv")
 df["reports_to"] = df["reports_to"].apply(lambda x: str(int(x)) if pd.notnull(x) else "")
 df.to_csv(output_path, index=False)
 
-print(f"✅ Org chart with 1000 employees saved to: {output_path}")
+print(f"Org chart with 1000 employees saved to: {output_path}")

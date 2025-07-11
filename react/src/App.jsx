@@ -4,6 +4,7 @@ import MyAccount from "./components/MyAccount";
 import Directory from "./components/Directory";
 import LoginForm from "./components/LoginForm";
 import AdvancedSearch from "./components/AdvancedSearch";
+import SalaryPredictor from "./components/SalaryPredictor";
 import RequireAuth from "./components/RequireAuth";
 import { AuthProvider } from './hooks/AuthContext';
 
@@ -42,6 +43,9 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to="/advanced-search">Advanced Search</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/predict-salary">Predict Salary</Link>
+              </li>  
             </ul>
             <form className="d-flex" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -61,11 +65,10 @@ function App() {
               </div>
             } />
            
-           <Route path="/account" element={<RequireAuth> <MyAccount /></RequireAuth>} />
+            <Route path="/account" element={<RequireAuth> <MyAccount /></RequireAuth>} />
             <Route path="/directory" element={<RequireAuth> <Directory /></RequireAuth>} />
-              
             <Route path="/advanced-search" element={<RequireAuth> <AdvancedSearch /></RequireAuth>} />
-            
+            <Route path="/predict-salary" element={<SalaryPredictor />} />
           </Routes>
         </AuthProvider>
       </main>

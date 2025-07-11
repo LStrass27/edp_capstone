@@ -58,12 +58,12 @@ const requireAuth = (req, res, next) => {
 };
 
 app.post('/login', async (req, res) => {
+    console.log("INSIDE /LOGIN");
     try {
       const { username, password } = req.body;
-      console.log(username, password)
       
       const usersColl = db.collection(process.env.MONGO_DB_COLLECTION_USERS);
-      const user = await usersColl.findOne({ username: username, password: password });
+      const user = await usersColl.findOne({ username: username});
       
       if (!user) {
         return res.status(401).json({ message: 'Invalid credentials' });
@@ -71,17 +71,20 @@ app.post('/login', async (req, res) => {
       
     
       const empColl = db.collection(process.env.MONGO_DB_COLLECTION_EMPLOYEES);
-      const emp = await empColl.findOne({ employee_id: password});
+      const emp = await empColl.findOne({ employee_id: parseInt(password)});
+      console.log(emp);
 
       if (!emp) {
         return res.status(401).json({ message: 'Invalid credentials' });
       }
       
       // Store user ID in session
-      req.session.userId = emp.employee_id.toString();
+      req.session.userId = emp.employee_id;
       req.session.job_role = emp.job_role;
-      req.session.reports_to = emp.reports_to ? user.reports_to.toString() : null;
+
+      req.session.reports_to = emp.reports_to ? user.reports_to : null;
       
+
       res.json(emp);
     } catch (err) {
       console.error("Login error:", err);
@@ -89,8 +92,9 @@ app.post('/login', async (req, res) => {
     }
   });
 
-
 app.get('/directory', requireAuth, async (req, res) => {
+    console.log("INSIDE /DIRECTORY");
+
     try {
         
         const collection = db.collection(process.env.MONGO_DB_COLLECTION_EMPLOYEES);
@@ -120,10 +124,13 @@ app.get('/directory', requireAuth, async (req, res) => {
 });
 
 app.get('/account', requireAuth, async (req, res) => {
+    console.log("INSIDE /ACCOUNT");
+
     try {
+        console.log(req.user.id);
         
         const collection = db.collection(process.env.MONGO_DB_COLLECTION_EMPLOYEES);
-        const employee = await collection.findOne({employee_id: req.user.id});
+        const employee = await collection.findOne({employee_id: parseInt(req.user.id)});
         if(!employee) {
             return res.status(404).send("No employee exists");
         }
@@ -136,6 +143,7 @@ app.get('/account', requireAuth, async (req, res) => {
 });
 
 app.post('/search', requireAuth, async (req, res) => {
+    console.log("INSIDE /SEARCH");
     try {
         const { searchTerm } = req.body;
         const collection = db.collection(process.env.MONGO_DB_COLLECTION_EMPLOYEES);
@@ -160,6 +168,8 @@ app.post('/search', requireAuth, async (req, res) => {
 });
 
 app.post('/logout', (req, res) => {
+    console.log("INSIDE /LOGOUT");
+
     req.session.destroy((err) => {
       if (err) {
         return res.status(500).json({ message: 'Failed to logout' });
@@ -168,19 +178,6 @@ app.post('/logout', (req, res) => {
     });
 });
   
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);

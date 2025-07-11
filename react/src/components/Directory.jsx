@@ -21,7 +21,7 @@ useEffect(() => {
         });
         
         console.log("RES: ", response);
-        const data = await response.text();
+        const data = await response.json();
         console.log("RES: ", data);
 
         setEmployeeData(data);

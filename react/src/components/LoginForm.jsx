@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../hooks/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './LoginForm.css'; // You'll need to create this CSS file
 
 function LoginForm() {
@@ -8,13 +8,16 @@ function LoginForm() {
     const [password, setPassword] = useState('');
     const { login } = useAuth();
     const navigate = useNavigate();
- 
+    const location = useLocation();
+    
+    const from = location.state?.from?.pathname || '/';
+
     const handleLogin = async (event) => {
         event.preventDefault();
 
         try {
             await login(username, password);
-            navigate('/directory')
+            navigate(from)
         } catch (err) {
             console.log("Login Failed in LoginForm.jsx");
         }
@@ -24,7 +27,7 @@ function LoginForm() {
         <div className="login-container">
             <div className="login-card">
                 <h2 className="login-title">Login</h2>
-                <form onSubmit={handleLogin} className="login-form">
+                <form onSubmit={handleLogin} action="POST" className="login-form">
                     <div className="form-group">
                         <label htmlFor="username">Username</label>
                         <input
