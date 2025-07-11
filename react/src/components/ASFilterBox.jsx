@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './ASFilterBox.css';
 
 const ASFilterBox = ({ onFilterChange }) => {
-  // State for search and filters
   const [searchTerm, setSearchTerm] = useState('');
   const [filters, setFilters] = useState({
     name: true,
@@ -17,8 +16,7 @@ const ASFilterBox = ({ onFilterChange }) => {
     const value = e.target.value;
     setSearchTerm(value);
     
-    // Call parent component's filter function with current search and filters
-    // Comment: This is where you would trigger the actual filtering logic
+    // Change filtering logic for new search iterm
     if (onFilterChange) {
       onFilterChange({
         searchTerm: value,
@@ -36,8 +34,7 @@ const ASFilterBox = ({ onFilterChange }) => {
     
     setFilters(updatedFilters);
     
-    // Call parent component's filter function with current search and updated filters
-    // Comment: This is where you would trigger the actual filtering logic
+    // Change filtering logic
     if (onFilterChange) {
       onFilterChange({
         searchTerm,
@@ -53,7 +50,6 @@ const ASFilterBox = ({ onFilterChange }) => {
 
   return (
     <div className="as-filter-box">
-      {/* Accordion header */}
       <div className="accordion-header" onClick={toggleAccordion}>
         <h3>Advanced Search</h3>
         <span className={`accordion-icon ${isOpen ? 'open' : 'closed'}`} style={{ fontSize: '20px' }}>
@@ -61,10 +57,8 @@ const ASFilterBox = ({ onFilterChange }) => {
         </span>
       </div>
       
-      {/* Collapsible content */}
       {isOpen && (
         <div className="accordion-content">
-          {/* Search Bar */}
           <div className="search-container">
             <input
               type="text"
@@ -78,7 +72,6 @@ const ASFilterBox = ({ onFilterChange }) => {
             </button>
           </div>
           
-          {/* Filter Options */}
           <div className="filter-options">
             <h4>Search in:</h4>
             <div className="filter-option">
@@ -112,15 +105,12 @@ const ASFilterBox = ({ onFilterChange }) => {
             </div>
           </div>
           
-          {/* Filter actions */}
           <div className="filter-actions">
             <button className="apply-filters-btn">Apply Filters</button>
             <button className="clear-filters-btn">Clear All</button>
           </div>
           
-          {/* Active filters */}
           <div className="active-filters">
-            {/* Active filters would be displayed here */}
           </div>
         </div>
       )}
