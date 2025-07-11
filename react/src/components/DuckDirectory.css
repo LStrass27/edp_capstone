@@ -32,8 +32,10 @@
 .features-list {
   font-size: 1.1rem;
   line-height: 1.6;
+  background-color: #fffde7;
 }
 
 .features-list li {
   margin-bottom: 0.75rem;
 }
+

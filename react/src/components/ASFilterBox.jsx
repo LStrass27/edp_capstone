@@ -67,9 +67,6 @@ const ASFilterBox = ({ onFilterChange }) => {
               onChange={handleSearchChange}
               className="search-input"
             />
-            <button className="search-button">
-              <i className="search-icon">Search</i>
-            </button>
           </div>
           
           <div className="filter-options">
@@ -104,12 +101,7 @@ const ASFilterBox = ({ onFilterChange }) => {
               <label htmlFor="locationFilter">Location</label>
             </div>
           </div>
-          
-          <div className="filter-actions">
-            <button className="apply-filters-btn">Apply Filters</button>
-            <button className="clear-filters-btn">Clear All</button>
-          </div>
-          
+
           <div className="active-filters">
           </div>
         </div>

@@ -1,0 +1,105 @@
+.home-intro-container {
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+}
+
+.home-intro-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px 0;
+  background-color: #fffde7;
+  width: 100%; /* Make header full width */
+}
+
+.account-content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 40px; /* Increased gap between elements */
+  margin: 40px 0; /* Increased margin to push content down from header */
+  width: 80%; /* Make container narrower to center content */
+}
+
+.account-info {
+  flex: 1;
+  background-color: #fffde7;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 500px; /* Limit width for better readability */
+}
+
+.account-image-container {
+  min-width: 360px; /* Increased from 300px to allow for padding */
+  height: 360px; /* Increased from 300px to allow for padding */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fffde7;
+  padding: 20px; /* Add padding around the image */
+}
+
+.account-image-container img {
+  width: 300px; /* Keep original image size */
+  height: 300px; /* Keep original image size */
+  object-fit: cover;
+  border-radius: 4px; /* Optional: slightly round the image corners */
+}
+
+.image-placeholder {
+  color: #555;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Loading state */
+.loading-text {
+  text-align: center;
+  padding: 40px;
+  background-color: #fffde7;
+  border-radius: 8px;
+  margin: 20px 0;
+  color: #555;
+  font-size: 18px;
+}
+
+/* Error state */
+.error-message {
+  text-align: center;
+  padding: 40px;
+  background-color: #fffde7;
+  border-radius: 8px;
+  margin: 20px 0;
+  color: #d32f2f;
+  font-size: 18px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  /* Other styles... */
+  
+  .account-image-container {
+    margin-bottom: 20px;
+    min-width: 280px; /* Increased from 250px to allow for padding */
+    height: 280px; /* Increased from 250px to allow for padding */
+    background-color: #fffde7;
+    padding: 15px;
+  }
+  
+  .account-image-container img {
+    width: 250px; /* Keep original mobile image size */
+    height: 250px; /* Keep original mobile image size */
+  }
+}

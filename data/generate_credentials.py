@@ -15,4 +15,4 @@ df_credentials["password"] = df["employee_id"].astype(str)  # Store as string
 output_path = os.path.join(os.path.dirname(__file__), "user_credentials.csv")
 df_credentials.to_csv(output_path, index=False)
 
-print(f"✅ User credentials saved to: {output_path}")
+print(f"User credentials saved to: {output_path}")

@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import random
 import os
+from faker import Faker
 
 # Roles in hierarchy
 roles = {
@@ -63,6 +64,15 @@ total_employees = sum(roles.values())
 employee_ids = generate_unique_ids(total_employees)
 phone_numbers = generate_unique_phone_numbers(total_employees)
 
+# Generate unique names
+fake = Faker()
+unique_names = set()
+while len(unique_names) < total_employees:
+    full_name = fake.name()
+    unique_names.add(full_name)
+name_list = list(unique_names)
+random.shuffle(name_list)
+
 employees = []
 id_role_map = {}
 role_id_pool = {role: [] for role in roles}
@@ -74,7 +84,7 @@ for role in roles:
     for _ in range(count):
         emp_id = employee_ids[id_index]
         phone = phone_numbers[id_index]
-        name = f"Employee_{id_index}"
+        name = name_list[id_index]
         location = random.choice(locations)
         salary = generate_salary(role, location)
         reports_to = None
@@ -85,7 +95,6 @@ for role in roles:
         elif role == "Vice President":
             reports_to = random.choice(role_id_pool["CFO"] + role_id_pool["COO"])
         elif role == "Director":
-            # Most to VP, a few to CFO/COO
             if random.random() < 0.85:
                 reports_to = random.choice(role_id_pool["Vice President"])
             else:
@@ -95,7 +104,6 @@ for role in roles:
         elif role in ["Software Engineer", "Product Manager", "Data Scientist", "HR Specialist", "Sales Rep"]:
             reports_to = random.choice(role_id_pool["Manager"])
 
-        # Add to employee list
         employees.append([emp_id, name, phone, role, location, salary, reports_to])
         id_role_map[emp_id] = role
         role_id_pool[role].append(emp_id)

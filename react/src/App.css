@@ -26,3 +26,11 @@ main.col-md-9 {
   margin: 0 auto;
   float: none;
 }
+
+.bullet-points-container {
+  background-color: #FFF8DC; /* Cornsilk - a different light yellow */
+  border-radius: 8px;
+  padding: 15px 25px;
+  margin: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}

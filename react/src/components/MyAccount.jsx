@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Description from './Description';
+import './MyAccount.css'; // Import the CSS file
 
 function MyAccount() {
   const [data, setData] = useState(null);
@@ -52,7 +53,7 @@ function MyAccount() {
     <div className="home-intro-container">
       <h2>My Account</h2>
       {data ? (
-        <div className="account-content-container" style={{ display: 'flex', alignItems: 'flex-start', gap: '20px' }}>
+        <div className="account-content-container">
           <div className="account-info">
             <Description
               name={data.name}
@@ -62,25 +63,11 @@ function MyAccount() {
               sal={data.salary}
             />
           </div>
-          <div
-            className="account-image-container"
-            style={{
-              minWidth: '200px',
-              height: '200px',
-              border: '1px solid #ccc',
-              borderRadius: '4px',
-              overflow: 'hidden',
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              backgroundColor: '#f0f0f0'
-            }}
-          >
+          <div className="account-image-container">
             {imageSrc && !imageError ? (
               <img
                 src={imageSrc}
                 alt="Profile"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 onLoad={() => {
                   console.log('Image loaded successfully!');
                   setImageLoaded(true);
@@ -91,12 +78,14 @@ function MyAccount() {
                 }}
               />
             ) : (
-              <div>{imageError ? 'Failed to load image' : 'Loading image...'}</div>
+              <div className="image-placeholder">
+                {imageError ? 'Failed to load image' : 'Loading image...'}
+              </div>
             )}
           </div>
         </div>
       ) : (
-        <p>Loading account information...</p>
+        <p className="loading-text">Loading account information...</p>
       )}
     </div>
   );

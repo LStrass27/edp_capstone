@@ -1,34 +1,40 @@
 .card {
-  background-color: #fffdf0; /* Very light yellow background */
-  border: 1px solid #f5e7a3;
+  background-color: #fffde7; /* Matching the #fffde7 background from directory CSS */
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(244, 208, 63, 0.2);
-  margin: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 15px auto; /* Center the card with auto horizontal margins */
+  max-width: 500px; /* Limit width for better centering */
+  width: 90%; /* Take up most of the container width */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(244, 208, 63, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .card-body {
   padding: 20px;
+  text-align: center; /* Center all text inside */
 }
 
 .card-title {
-  color: #b7950b; /* Darker yellow/gold for title */
-  border-bottom: 2px solid #f9e79f;
+  color: #333; /* Match the header color from directory CSS */
+  border-bottom: 2px solid #e0e0e0;
   padding-bottom: 10px;
   margin-bottom: 15px;
   font-weight: bold;
+  text-align: center; /* Ensure title is centered */
+  font-size: 20px;
 }
 
 .card-text {
-  color: #7d6608; /* Dark yellow-brown for text */
+  color: #555; /* Match the text color from directory CSS */
   margin-bottom: 8px;
   padding: 5px 0;
-  border-bottom: 1px dotted #f7dc6f;
+  border-bottom: 1px dotted #e0e0e0;
+  text-align: center; /* Center each text line */
 }
 
 .card-text:last-child {
