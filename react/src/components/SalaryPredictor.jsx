@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SalaryPredictor.css';
 
 function SalaryPredictor() {
   const [jobRole, setJobRole] = useState('');
@@ -8,12 +9,11 @@ function SalaryPredictor() {
 
   const handlePredict = async () => {
     try {
-        const response = await fetch('/predict', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ job_role: jobRole, location })
-          });          
-      
+      const response = await fetch('/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ job_role: jobRole, location })
+      });
 
       const data = await response.json();
       if (response.ok) {
@@ -30,24 +30,38 @@ function SalaryPredictor() {
   };
 
   return (
-    <div>
-      <h2>Predict Salary</h2>
-      <input
-        type="text"
-        placeholder="Job Role"
-        value={jobRole}
-        onChange={(e) => setJobRole(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Location"
-        value={location}
-        onChange={(e) => setLocation(e.target.value)}
-      />
-      <button onClick={handlePredict}>Predict</button>
+    <div className="salary-predictor-container">
+      <h2 className="salary-predictor-title">Predict Salary</h2>
+      <div className="salary-predictor-form">
+        <div className="form-group">
+          <label>Job Role</label>
+          <input
+            type="text"
+            placeholder="e.g. Software Engineer"
+            value={jobRole}
+            onChange={(e) => setJobRole(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Location</label>
+          <input
+            type="text"
+            placeholder="e.g. New York"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+          />
+        </div>
+        <button className="salary-predictor-button" onClick={handlePredict}>
+          Predict
+        </button>
 
-      {salary && <p>Predicted Salary: ${salary}</p>}
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+        {salary !== null && (
+          <p className="salary-result">
+            Predicted Salary: ${salary.toLocaleString(undefined, { minimumFractionDigits: 2 })}
+          </p>
+        )}
+        {error && <p className="salary-error">{error}</p>}
+      </div>
     </div>
   );
 }
