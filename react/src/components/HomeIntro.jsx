@@ -8,7 +8,7 @@ function DuckEnterpriseDirectory() {
   <><strong>My Account</strong>: View/Edit your information</>,
   <><strong>Directory</strong>: View all Duck Enterprises LLC Employees</>,
   <><strong>Advanced Search</strong>: Filter the directory by employee identifiers</>,
-  <><strong>Search Bar</strong>: Find employees by name</>
+  <><strong>Predict Salary</strong>: Estimate Salaries Based on Location & Position</>
 ];
 
   return (
