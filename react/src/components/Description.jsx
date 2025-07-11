@@ -15,7 +15,7 @@ const Description = ({name, phone, role, loc, sal, subordinates}) => {
     return (
         <div className="card" style={{ flex: '1', minWidth: '300px', maxWidth: '45%' }}>
             <div className="card-body">
-                <h5 className="card-title">Summary</h5>
+                <h5 className="card-title">Information Summary</h5>
                 <div className="card-text">Name: {name}</div>
                 <div className="card-text">Phone Number: {phone}</div>
                 <div className="card-text">Job Role: {role}</div>
