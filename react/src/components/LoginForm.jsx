@@ -6,6 +6,7 @@ import './LoginForm.css';
 function LoginForm() {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
     const { login } = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
@@ -14,12 +15,14 @@ function LoginForm() {
 
     const handleLogin = async (event) => {
         event.preventDefault();
+        setError('');
 
         try {
             await login(username, password);
             navigate(from)
         } catch (err) {
             console.log("Login Failed in LoginForm.jsx");
+            setError('Incorrect username and/or password. Please try again.');
         }
     };
  
@@ -51,6 +54,9 @@ function LoginForm() {
                         />
                     </div>
                     <button type="submit" className="login-button">Login</button>
+                    {error && <div style={{ color: 'red'}}>{error}</div>}
+
+                    
                 </form>
             </div>
         </div>
