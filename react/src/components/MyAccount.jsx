@@ -69,7 +69,6 @@ function MyAccount() {
                 src={imageSrc}
                 alt="Profile"
                 onLoad={() => {
-                  console.log('Image loaded successfully!');
                   setImageLoaded(true);
                 }}
                 onError={(e) => {

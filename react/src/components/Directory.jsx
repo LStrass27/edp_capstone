@@ -20,9 +20,7 @@ useEffect(() => {
           credentials: 'include'
         });
         
-        console.log("RES: ", response);
         const data = await response.json();
-        console.log("RES: ", data);
 
         setEmployeeData(data);
         setLoading(false);

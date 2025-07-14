@@ -5,10 +5,11 @@ function DuckEnterpriseDirectory() {
   // Sample features - replace with your actual features
   const features = [
   <><strong>Login</strong>: Sign into your Duck Enterprises LLC enterprise account</>,
-  <><strong>My Account</strong>: View/Edit your information</>,
+  <><strong>My Account</strong>: View your account information</>,
   <><strong>Directory</strong>: View all Duck Enterprises LLC Employees</>,
   <><strong>Advanced Search</strong>: Filter the directory by employee identifiers</>,
-  <><strong>Predict Salary</strong>: Estimate Salaries Based on Location & Position</>
+  <><strong>Predict Salary</strong>: Estimate Salaries Based on Location & Position</>,
+  <><strong>Logout</strong>: Sign Out of your Duck Enterprises LLC enterprise account</>
 ];
 
   return (
